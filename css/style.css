@@ -18,7 +18,7 @@ html{
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 999;
+	z-index: 999999;
 }
 .nav ul{
 	margin-right: 10%;
@@ -36,8 +36,22 @@ html{
 	line-height: 18px;
 }
 .nav li a{
+	position: relative;
 	color: rgba(255,255,255,.6);
 	transition: .7 all ease;
+}
+.nav li a i{
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	width: 100%;
+	height: 3px;
+	background: #10A7AF;
+	opacity: 0;
+	transition: 1s all ease;
+}
+.nav li a:hover i{
+	opacity: 1;
 }
 .nav li a:hover{
 	color: #fff;
@@ -95,7 +109,7 @@ html{
 }
 .banner h3{
 	top: 53%;
-	margin-left: -80px;
+	margin-left: -94px;
 	font-size: 20px;
 }
 
@@ -180,15 +194,15 @@ html{
 /*关于我部分*/
 .about_me{
 	background: #F3F3F3;
-	width: 100%;
+	width: auto;
 	height: auto;
-	padding: 40px 0 80px;
+	padding: 40px 80px 80px;
 }
 .about_me .right{
 	width: 100%;
 }
 .about_me h3{
-	font-size: 26px;
+	font-size: 22px;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -197,7 +211,7 @@ html{
 	color: #6B6363;
 	width: 500px;
 	line-height: 26px;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	margin: 0 auto 50px;
 }
@@ -210,7 +224,7 @@ html{
 	line-height: 42px;
 	font-size: 20px;
 	transition: 1s all ease;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .about_me .my_resume:hover{
 	border-radius: 30px;
@@ -220,32 +234,54 @@ html{
 }
 .about_me .my_skill{
 	margin: 0 auto;
-	width: 1014px;
+	width: 50%;
+}
+.about_me .my_skill li{
+	padding: 16px 0;
 }
 .about_me .my_skill li .skill_icon img{
-	width: 100%;
+	width: 140%;
+	margin-top: -20px;
 }
 .about_me .my_skill li h5{
-	font-size: 24px;
+	font-size: 22px;
 
 }
 .about_me .my_skill li p{
-	margin-top: 14px;
-	font-size: 16px;
-	width: 800px;
-	line-height: 30px;
+	color: #424242;
+	margin-top: 5px;
+	font-size: 14px;
+	width: 490px;
+	line-height: 22px;
 }
 .about_me .my_skill li .skill_icon{
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
-	border: 4px solid #ccc;
-	margin: 0 60px 60px 0;
+	/*border: 4px solid #ccc;*/
+	margin-right: 40px;
 }
-.about_me .my_skill li .s_mask{
-
+.about_me .my_abily{
+	width: 50%;
+	height: 600px;
 }
-
+.about_me .my_abily .overal{
+	margin-left: 50px;
+	width: 95%;
+	height: 470px;
+	background: url(../images/bility.png);
+	background-size: cover;
+}
+.about_me .my_abily .overal_poin{
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+    margin-top: 50px;
+}
+.about_me .my_abily .overal_poin .point{
+	font-size: 32px;
+	color: #F56316;
+}
 .about_me .next_btn{
 	width: 260px;
 	height: 60px;
@@ -279,7 +315,7 @@ html{
 	width: 210px;
 	text-align: center;
 	color: rgba(0,0,0,.7);
-	font-size: 40px;
+	font-size: 36px;
 }
 .content .txt{
 	margin: 44px auto;
@@ -381,7 +417,7 @@ html{
 	color: #000;
 }
 .case_show .work_list{
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .case_show .work_list .shows{
 	width: 100%;
@@ -390,16 +426,16 @@ html{
 	transition: 1s all ease;
 }
 .case_show .work_list .shows .explains{
-	font-size: 20px;
+	font-size: 16px;
     width: 480px;
-    line-height: 34px;
+    line-height: 20px;
     text-align: center;
     margin-left: 30%;
-    margin-top: 21px;
+    margin-top: 10px;
 }
 .case_show .work_list .shows .shows_tit{
 	margin-left: 36%;
-	height: 52px;
+	height: 40px;
 	width: 520px;
 }
 .case_show .work_list .shows .show_tips{
@@ -424,7 +460,7 @@ html{
 .case_show .work_list .shows h3{
 	float: left;
 	text-align: center;
-	font-size: 38px;
+	font-size: 32px;
 	color: #fff;
 	margin-right: 20px;
 }
@@ -443,9 +479,9 @@ html{
 	transition: 1s all ease;
 }
 
-
 .case_show .work_list .shows-1 h3{
 	color: #000;
+	margin-left: 54px;
 }
 
 /*拖拽照片墙*/
@@ -533,7 +569,6 @@ html{
 	height: 100%;
 }
 
-
 /*旋转照片合并效果*/
 .case_show .work_list .shows-3{
 	height: 700px;
@@ -545,8 +580,8 @@ html{
 }
 .case_show .work_list .shows-3 .turn_box{
 	position: relative;
-	width: 750px;
-	height: 500px;
+	width: 600px;
+	height: 400px;
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -596,52 +631,6 @@ html{
 	background: url(../images/works4/prev.png) no-repeat 12px center white;
 }
 
-/*连续淡入淡出效果*/
-.case_show .work_list .shows  .slide_show{
-	position: relative;
-	margin: 50px auto;
-	width: 825px;
-	height: 425px;
-	padding-left: 25px;
-	padding-top: 25px;
-	background: url(../images/work4/bg.png);
-}
-.case_show .work_list .shows  .slide_show li{
-	width: 192px;
-	height: 196px;
-	margin: 0 10px 10px 0;
-}
-.case_show .work_list .shows  .slide_show li img{
-	width: 100%;
-}
-.case_show .work_list .shows  .slide_show div{
-	position: absolute;
-	top: 50%;
-	width: 38px;
-	height: 50px;
-	background: url(../images/work4/btn.png);
-	cursor: pointer;
-}
-.case_show .work_list .shows  .slide_show #slide_next{
-	right: 0;
-	margin-right: -15px;
-	background-position: center right;
-}
-.case_show .work_list .shows  .slide_show #slide_prev{
-	left: 0;
-	margin-left: -15px;
-}
-
-/*仿苹果菜单效果*/
-.case_show .work_list .shows .apple_show ul{
-	width: 100%;
-	height: 64px;
-	text-align: center;
-}
-.case_show .work_list .shows .apple_show ul li{
-	float: left;
-}
-
 /*css3图片展示效果-翻页*/
 .case_show .work_list .shows .pics_show{
 	position: relative;
@@ -686,7 +675,6 @@ html{
 	position: absolute;
 	right: 0;
 	top: 0;
-	background: green;
 	width: 50%;
 	height: 100%;
 	transform-style: preserve-3d;
@@ -785,3 +773,89 @@ html{
 	background: none;
 	border: none;
 }
+
+/*footer部分*/
+.footer{
+	width: 100%;
+	height: 520px;
+	background: url(../images/footerbg.jpg);
+	background-size: cover;
+	padding-top: 50px;
+}
+.footer h1{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+.footer .contacts{
+	margin-left: 80px;
+	margin-top: 100px;
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border: 2px solid #999;
+	padding: 50px;
+}
+.footer .contacts i{
+	position: absolute;
+	left: -2px;
+	top: -42px;
+	width: 120px;
+	height: 40px;
+	background: #10A7AF;
+	font-style: normal;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+.footer .contacts span{
+	display: block;
+	padding-left: 55px;
+	width: 300px;
+	height: 40px;
+	background-size: 40px 40px;
+	margin-bottom: 28px;
+}
+.footer .contacts a{
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+}
+.footer .contacts a:hover{
+	color: #999;
+}
+.footer .contacts a:hover em{
+	opacity: 1;
+}
+.footer .contacts span em{
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #10A7AF;
+	opacity: 0;
+	transition: 1s all ease;
+}
+.footer .select_me{
+	margin-left: 180px;
+}
+.footer .select_me i{
+	left: 382px;
+}
+.footer .select_me p{
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+}
+.footer .email{
+	background: url(../images/email.png) no-repeat;
+}
+.footer .qq{
+	background: url(../images/qq.png) no-repeat;
+}
+.footer .web-site{
+	background: url(../images/web.png) no-repeat;
+}
+
