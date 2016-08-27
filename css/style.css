@@ -2,7 +2,8 @@ body{
 	background: #424242;
 }
 html{
-	overflow: auto;
+	height: 100%;
+	overflow: hidden;
 }
 .content{
 	width: 1366px;
@@ -10,821 +11,572 @@ html{
 	height: auto;
 	margin: 0 auto;
 }
-/*导航条*/
-.nav{
-	width: 100%;
-	height: 60px;
-	background: #000;
+
+/*翻页标志*/
+.page_tip{
+	width: 14px;
 	position: fixed;
+	right: 20px;
+	top: 50%;
+	z-index: 99999;
+}
+.page_tip li{
+	position: relative;
+	width: 100%;
+	height: 14px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.page_tip span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2px;
+	margin-top: -2px;
+	width: 4px;
+	height: 4px;
+	background: rgba(204, 204, 204, 0.8);
+	border-radius: 50%;
+}
+.page_tip span.p_on{
 	left: 0;
 	top: 0;
-	z-index: 999999;
+	width: 14px;
+	height: 14px;
+	margin: 0;
+	border: 2px solid rgba(204, 204, 204, 0.8);
+	box-sizing: border-box;
+	background: none;
 }
-.nav ul{
-	margin-right: 10%;
-}
-.nav li{
-	font-size: 16px;
-	line-height: 60px;
-	text-align: center;
-}
-.nav li span{
-	color: #fff;
-	display: inline-block;
-	width: 35px;
-	font-size: 10px;
-	line-height: 18px;
-}
-.nav li a{
-	position: relative;
-	color: rgba(255,255,255,.6);
-	transition: .7 all ease;
-}
-.nav li a i{
+.page_tip li p{
+	width: 36px;
+	font-size: 12px;
 	position: absolute;
-	left: 0;
-	bottom: -7px;
-	width: 100%;
-	height: 3px;
-	background: #10A7AF;
+	left: -40px;
+	top: -2px;
+	color: #ccc;
+	text-align: right;
+	transition: .6s all ease;
 	opacity: 0;
-	transition: 1s all ease;
-}
-.nav li a:hover i{
-	opacity: 1;
-}
-.nav li a:hover{
-	color: #fff;
-}
-
-/*置顶按钮*/
-#to_top{
-	width: 60px;
-	height: 60px;
-	background: url(../images/top.png);
-	background-size: cover;
-	position: fixed;
-	right: 30px;
-	bottom: 30px;
-	cursor: pointer;
-	opacity: 0.2;
-	transition: .7s all ease;
-}
-#to_top:hover{
-	opacity: 1;
 }
 
 /*banner图*/
 .banner{
-	width: 100%;
-	height: 100%;
-}
-.banner li{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background: rgba(79, 133, 187, 1);
 }
-.banner li img{
+.banner .main{
 	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
 }
 .banner .face{
-	position: absolute;
-	left: 50%;
-	top: 27%;
-	margin-left: -60px;
-	border: 2px solid #000;
-	width: 120px;
-	height: 120px;
+	border: 8px solid #ccc;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 	background: url(../images/face.jpg);
 	background-size: cover;
 }
 .banner .name,.banner h3{
-	position: absolute;
-	left: 50%;
-	top: 47%;
-	margin-left: -40px;
-	font-size: 24px;
+	margin: 10px 0 0;
+	font-size: 42px;
 	color: #fff;
+	text-shadow: 1px 2px 3px #000;
 }
 .banner h3{
-	top: 53%;
-	margin-left: -94px;
-	font-size: 20px;
+	font-size: 22px;
 }
-
-/*简历*/
-#resume_box{
-	position: fixed;
-	left: 50%;
-	top: -40%;
-	margin-left: -400px;
-	margin-top: -240px;
-	z-index: 999;
+.banner #begin span{
 	opacity: 0;
-	width: 775px;
-	height: 520px;
-	padding-left: 25px;
-	background: url(../images/bodybg.png);
-	box-shadow: 0 0 10px #000;
-	border-radius: 10px;
-	transition: 1s all ease;
 }
-#resume_box .resume_face{
-	margin: 110px auto;
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-	border: 4px solid #ccc;
-	background: url(../images/dog11.jpg);
-	background-size: cover;
-}
-#resume_box .resume_name{
-	font-size: 30px;
-	margin-top: -90px;
-    margin-left: 70px;
-}
-#resume_box .mid_tit{
-	font-size: 28px;
-	text-align: center;
-	margin-bottom: 30px;
-}
-#resume_box .resume_tips span{
-	font-size: 18px;
-	padding: 2px 6px;
-	border: 1px solid #000;
-	float: left;
-	margin: 10px;
-	border-radius: 6px;
-}
-#resume_close{
-	position: absolute;
-	right: 6px;
-	top: 6px;
-	width: 40px;
-	height: 40px;
-	background: url(../images/close_icon.png);
-	background-size: 40px;
-	cursor: pointer;
-}
-#resume_box .resume_txt p{
-	margin-left: 18px;
-	font-size: 17px;
+.banner h4{
+	margin-top: 30px;
+	color: #fff;
+	width: 500px;
 	line-height: 30px;
-}
-#resume_box .left{
-	margin-top: 40px;
-	margin-right: 20px;
-	width: 30%;
-	height: 85%;
-}
-#resume_box .mid{
-	margin-top: 40px;
-	margin-right: 20px;
-	width: 54%;
-	height: 85%;
-	/*border-left: 4px solid #000;
-	border-right: 4px solid #000; */
-}
-#resume_close:hover{
-	background: url(../images/close_icon.png) 0 -40px;
-	background-size: 40px;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 1px 2px 3px #000;
 }
 
 /*关于我部分*/
 .about_me{
-	background: #F3F3F3;
+	position: relative;
+	background: #75c8b9;
+	background-size: cover;
 	width: auto;
-	height: auto;
-	padding: 40px 80px 80px;
 }
 .about_me .right{
 	width: 100%;
 }
-.about_me h3{
-	font-size: 22px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.about_me h4{
-	color: #6B6363;
-	width: 500px;
-	line-height: 26px;
-	font-size: 14px;
-	text-align: center;
-	margin: 0 auto 50px;
-}
-.about_me .my_resume{
-	width: 180px;
-	height: 42px;
-	border: 2px solid #424242;
-	margin: 0 auto;
-	text-align: center;
-	line-height: 42px;
-	font-size: 20px;
-	transition: 1s all ease;
-	margin-bottom: 30px;
-}
-.about_me .my_resume:hover{
-	border-radius: 30px;
-	background: #424242;
-	color: #fff;
-	cursor: pointer;
-}
-.about_me .my_skill{
-	margin: 0 auto;
-	width: 50%;
-}
-.about_me .my_skill li{
-	padding: 16px 0;
-}
-.about_me .my_skill li .skill_icon img{
-	width: 140%;
-	margin-top: -20px;
-}
-.about_me .my_skill li h5{
-	font-size: 22px;
-
-}
-.about_me .my_skill li p{
-	color: #424242;
-	margin-top: 5px;
-	font-size: 14px;
-	width: 490px;
-	line-height: 22px;
-}
-.about_me .my_skill li .skill_icon{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	/*border: 4px solid #ccc;*/
-	margin-right: 40px;
-}
-.about_me .my_abily{
-	width: 50%;
-	height: 600px;
-}
-.about_me .my_abily .overal{
-	margin-left: 50px;
-	width: 95%;
-	height: 470px;
-	background: url(../images/bility.png);
-	background-size: cover;
-}
-.about_me .my_abily .overal_poin{
-	font-size: 26px;
-	font-weight: bold;
-	text-align: center;
-    margin-top: 50px;
-}
-.about_me .my_abily .overal_poin .point{
-	font-size: 32px;
-	color: #F56316;
-}
-.about_me .next_btn{
-	width: 260px;
-	height: 60px;
-	border-radius: 15px;
-	text-align: center;
-	line-height: 60px;
-	color: #f35342;
-	font-size: 30px;
-	font-weight: bold;
-	border: 2px solid #f35342;
-	margin-left: 40%;
-	cursor: pointer;
-	transition: .7s all ease;
-	background: rgb(255,255,255);
-}
-.about_me .next_btn:hover{
-	background: rgb(243, 83, 66);
-	color: #fff;
-	border-radius: 40px;
-}
-
-/*我的作品部分*/
-.my_works{
-	width: 100%;
-	position: relative;
-	background: #1D1C1C;
-	padding: 80px 0 60px;
-}
 .content .tit{
 	margin: 0 auto;
-	width: 210px;
+	padding-top: 26px;
 	text-align: center;
-	color: rgba(0,0,0,.7);
-	font-size: 36px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #666;
 }
 .content .txt{
 	margin: 44px auto;
 	width: 360px;
 	color: rgba(0,0,0,.5);
 }
-.my_works .work_tit,.my_works .work_txt{
+.sec_tit{
+	position: relative;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 12px;
 	color: #fff;
 }
-.my_works ul{
-	width: 1200px;
-	height: 570px;
-	margin: 0 auto;
-	/*overflow: hidden;*/
+.sec_tit span{
+	position: absolute;
+	width: 500px;
+	height: 4px;
+	background: rgba(173, 173, 173, 0.4);
 }
-.my_works .list{
-	width: 100%;
-	height: 450px;
+.about_me .my-info{
 	position: relative;
-}
-.my_works .list img{
 	width: 100%;
 	height: 100%;
 }
-.my_works .list li{
+.about_me .my-info #info-btn-prev,
+.about_me .my-info #info-btn-next{
+	position: absolute;
+	top: 40%;
+	margin-top: -15px;
+	width: 17px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 9999999;
+}
+.about_me .my-info #info-btn-prev{
+	left: 80px;
+	background: url(../images/arrows.png) no-repeat;
+}
+.about_me .my-info #info-btn-next{
+	right: 80px;
+	background: url(../images/arrows.png) no-repeat 0 -30px;
+}
+.about_me .my-info .info-list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 480px;
+}
+.about_me .my-info .info-list .info-levels,
+.about_me .my-info .info-list .info-details,
+.about_me .my-info .info-list .info-skills{
+	width: 1366px;
+	height: 510px;
+}
+.about_me .my-info .info-list .info-details{
+	width: 1366px;
+	height: auto;
+}
+.about_me .my-info .info-list .info-details .details-box{
+	position: relative;
+	width: 880px;
+	height: 460px;
+	background: #eee;
+	margin: 20px auto;
+	border: 3px solid #dcdcdc;
+	box-shadow: 0 0 6px #000;
+}
+
+.about_me .my-info .info-list .info-details .details-box .faces{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 4px solid #000;
+	background: url(../images/face.jpg);
+	background-size: 100%;
+	margin: 120px 50px 0 50px;
+}
+.about_me .my-info .info-list .info-details .details-box .details{
+	width: 310px;
+	height: auto;
+}
+.about_me .my-info .info-list .info-details .details-box .details h4{
+	font-size: 36px;
+	font-weight: bold;
+	color: #3d4451;
+	margin: 80px 0 20px 0;
+}
+.about_me .my-info .info-list .info-details .details-box .details .basic{
+	font-size: 16px;
+}
+.about_me .my-info .info-list .info-details .details-box .details .basic p{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.about_me .my-info .info-list .info-details .details-box .details .basic p span{
+	display: inline-block;
+	width: 108px;
+}
+.about_me .my-info .info-list .info-details .details-box .details .basic .info-tip span{
+	font-weight: bold;
+	color: #3d4451;
+}
+.about_me .my-info .info-list .info-details .details-box .contacts{
+	width: 100px;
+	margin: 90px 0 0 70px;
+}
+.about_me .my-info .info-list .info-details .details-box .contacts li{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.about_me .my-info .info-list .info-details .details-box .contacts li i{
 	position: absolute;
 	left: 50%;
-	top: 0;
-	margin-left: -150px;
-	transition: 1s all ease;
-	transform: perspective(800px) rotateY(0deg) translateX(0px);
-}
-.my_works .list li div{
-	width: 250px;
-	height: 180px;
-	background: #ccc;
-	margin-top: 20px;
-}
-
-.my_works .list li.cur1{
-	transform: perspective(800px) rotateY(5deg) translateX(-140px);
-}
-.my_works .list li.cur2{
-	transform: perspective(800px) rotateY(-5deg) translateX(140px);
-}
-.my_works .list li.l1{
-	transform: perspective(800px) rotateY(15deg) translateX(-410px);
-}
-.my_works .list li.l2{
-	opacity: 0;
-	transform: perspective(800px) rotateY(15deg) translateX(-670px);
-}
-.my_works .list li.r1{
-	transform: perspective(800px) rotateY(-15deg) translateX(410px);
-}
-.my_works .list li.r2{
-	opacity: 0;
-	transform: perspective(800px) rotateY(-15deg) translateX(670px);
-}
-
-.my_works .more_btn{
-	width: 160px;
-	height: 20px;
-	margin: 0 auto;
-}
-.my_works .more_btn span{
-	display: block;
-	width: 54px;
-	height: 20px;
-	background: #666;
-	margin-right: 10px;
-	font-size: 20px;
-	color: #fff;
-	line-height: 20px;
-	cursor: pointer;
-	padding: 0 8px;
-}
-.my_works .more_btn span:hover{
-	background: #eee;
-	color: #000;
-}
-.my_works .more_btn .more_next{
-	text-align: right;
-	border-radius: 0 10px 10px 0;
-}
-.my_works .more_btn .more_prev{
-	border-radius: 10px 0 0 10px;
-}
-
-/*案例展示部分*/
-.case_show{
-	width: 100%;
-	height: auto;
-	background: #F3F3F3;
-	padding-top: 15px;
-}
-.case_show .show_tit,
-.case_show .show_txt{
-	color: #000;
-}
-.case_show .work_list{
-	margin-top: 30px;
-}
-.case_show .work_list .shows{
-	width: 100%;
-	height: 620px;
-	margin: 0 auto;
-	transition: 1s all ease;
-}
-.case_show .work_list .shows .explains{
-	font-size: 16px;
-    width: 480px;
-    line-height: 20px;
-    text-align: center;
-    margin-left: 30%;
-    margin-top: 10px;
-}
-.case_show .work_list .shows .shows_tit{
-	margin-left: 36%;
-	height: 40px;
-	width: 520px;
-}
-.case_show .work_list .shows .show_tips{
-	margin-top: 10px;
+	top: 50%;
+	margin-left: -15px;
+	margin-top: -15px;
 	width: 30px;
 	height: 30px;
-	background: #fff;
-	margin-right: 10px;
 }
-.case_show .work_list .shows .h5{
-	background: url(../images/h5.png)  no-repeat center center;
-	background-size: cover;
+.about_me .my-info .info-list .info-details .details-box .my-resume{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(../images/down_icon.png) no-repeat center center;
+    background-size: 35px 35px;
+    transition: .5s all ease;
 }
-.case_show .work_list .shows .css3{
-	background: url(../images/css3.png) no-repeat center center;
-	background-size: 120%;
-}
-.case_show .work_list .shows .js{
-	background: url(../images/js.png) no-repeat center center;
-	background-size: 80%;
-}
-.case_show .work_list .shows h3{
-	float: left;
-	text-align: center;
-	font-size: 32px;
+.about_me .my-info .info-list .info-details .details-box .my-resume .down{
+	position: absolute;
+	right: -90px;
+	top: 50%;
+	margin-top: -11px;
+	width: 80px;
+	height: 22px;
+	border-radius: 3px;
+	background: rgba(109,109,109,0.5);
+	font-size: 12px;
 	color: #fff;
-	margin-right: 20px;
-}
-.case_show .work_list .shows .works_box{
-	width: 100%;
-	height: auto;
-}
-.case_show .shows .works{
-	margin-left: 90px;
-	margin-right: 0px;
-	width: 40%;
-	height: 500px;
-	border-radius: 40px;
-	background: #fff;
-	float: left;
-	transition: 1s all ease;
-}
-
-.case_show .work_list .shows-1 h3{
-	color: #000;
-	margin-left: 54px;
-}
-
-/*拖拽照片墙*/
-.case_show .work_list .screen_box{
-	margin-top: 26px;
-}
-.case_show .work_list .screen_box #drag_btn{
-	width: 100px;
-	height: 36px;
-	cursor: pointer;
-	font-size: 16px;
+	line-height: 22px;
 	text-align: center;
-	line-height: 36px;
-	border-radius: 10px;
-	background: url(../images/btn.png);
-	background-size: cover;
-	margin-bottom: 20px;
-	margin-left: 25%;
+	opacity: 0;
+	display: none;
 }
-#drag_btn:active{
-	color: #666;
-}
-.case_show .work_list .screen_box ul{
-	width: 438px;
-	height: 398px;
-	margin-left: 15%;
-	position: relative;
-}
-.case_show .work_list .screen_box li{
-	width: 100px;
-	height: 100px;
-	float: left;
-	margin: 8px;
-	border: 3px solid #666;
-}
-.case_show .work_list .screen_box img{
-	width: 100%;
-	height: 100%;
-}
-.case_show .work_list .screen_box .drag_code{
-	width: 544px;
-	height: 358px;
-	overflow: hidden;
-}
-.case_show .work_list .screen_box .drag_code h6{
-	font-size: 20px;
-}
-.case_show .work_list .shows-2{
-	padding-top: 40px;
-	height: 700px;
-	background: #1D1C1C;
-}
-.case_show .work_list .shows-2 .explains{
-	color: #fff;
-	width: 565px;
-}
-/*3D环绕图片展示*/
-.case_show .work_list .shows .surround_box{
-	height: 100%;
-}
-.case_show .surround_box ul{
-	position: relative;
-	margin: 80px auto;
-	width: 133px;
-	height: 200px;
-	cursor: pointer;
-	transform-style: preserve-3d;
-	transform: perspective(800px) rotateX(-15deg) rotateY(0deg);
-}
-.case_show .surround_box li{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 133px;
-	height: 200px;
-	box-shadow: 0 0 10px #fff;
-	transition: .7s all ease;
-	transform: rotateY(0deg) translateZ(0px);
-}
-/*.case_show .surround_box li:active{
-	transform: rotateY(72deg) translateZ(200px);
-}*/
-.case_show .surround_box img{
-	width: 100%;
-	height: 100%;
-}
-
-/*旋转照片合并效果*/
-.case_show .work_list .shows-3{
-	height: 700px;
-	padding-top: 40px;
-	background: url(../images/works4/bg.jpg);
-}
-.case_show .work_list .shows-3 h3{
-	color: #000;
-}
-.case_show .work_list .shows-3 .turn_box{
-	position: relative;
-	width: 600px;
-	height: 400px;
-	margin: 0 auto;
-	margin-top: 50px;
-}
-.case_show .work_list .shows-3 .turn_box .turn_lis{
-	position: absolute;
-	left: 0;
-	top: 0;
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #000;
-	box-sizing: border-box;
-	cursor: pointer;
-	transition: 1.5s all ease;
-}
-.case_show .work_list .shows-3 .turn_box .turn_s{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../images/works4/img/1.jpg);
-}
-.case_show .work_list .shows-3 .turn_box a{
-	position: absolute;
-	bottom: -60px;
-	margin-top: -31px;
-	width: 62px;
-	height: 32px;
-	background: url(../images/works4/next.png) no-repeat 36px center white;
-	z-index: 20;
-	cursor: pointer;
-	opacity: 0.7;
-}
-.case_show .work_list .shows-3 .turn_box a:hover{
+.about_me .my-info .info-list .info-details .details-box .my-resume:hover .down{
+	display: block;
 	opacity: 1;
 }
-.case_show .work_list .shows-3 .turn_box #turn_next{
-	border: 1px solid #000;
-	border-radius: 0 10px 10px 0;
-	right: 50%;
-	margin-right: -74px;
+.about_me .my-info .info-list .info-details .details-box .my-resume:hover{
+	box-shadow: 0 0 10px #000;
 }
-.case_show .work_list .shows-3 .turn_box #turn_prev{
-	border: 1px solid #000;
-	border-radius: 10px 0 0 10px;
-	left: 50%;
-	margin-left: -74px;
-	background: url(../images/works4/prev.png) no-repeat 12px center white;
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-qq{
+	background: url(../images/detail-qq.png);
+	background-size: cover;
 }
-
-/*css3图片展示效果-翻页*/
-.case_show .work_list .shows .pics_show{
-	position: relative;
-	margin: 40px auto;
-	width: 700px;
-	height: 400px;
-	background: url(../images/work7/0.jpg);
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-wechat{
+	background: url(../images/detail-wechat.png);
+	background-size: cover;
 }
-
-.case_show .work_list .shows .pics_btns{
-	width: 775px;
-	margin: 0 auto;
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-email{
+	background: url(../images/detail-email.png);
+	background-size: cover;
 }
-.case_show .work_list .shows .pics_btns a{
-	width: 135px;
-	height: 64px;
-	background: #783b81;
-	border-radius: 10px;
-	float: left;
-	margin-left: 320px;
-	cursor: pointer;
-	font-size: 30px;
-	font-family: '楷体';
-	color: #fff;
-	font-weight: bold;
-	text-align: center;
-	line-height: 64px;
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-git{
+	background: url(../images/detail-github.png);
+	background-size: cover;
 }
-.case_show .work_list .shows .pics_btns  #pics_btn1{
-	background: #108ceb;
-}
-.case_show .work_list .shows .pics_btns  #pics_btn2{
-	background: #eb8310;
-}
-.case_show .work_list .shows .pics_btns  #pics_btn3{
-	background: #c862fb;
-}
-.case_show .work_list .shows .pics_btns  #pics_btn4{
-	background: #f04c6f;
-}
-.case_show .work_list .shows .pics_show .page{
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 50%;
-	height: 100%;
-	transform-style: preserve-3d;
-	transform-origin: left center;
-	transform: perspective(800px) rotateY(0deg);
-	z-index: 2;
-}
-.case_show .work_list .shows .pics_show .page2{
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 50%;
-	height: 100%;
-	z-index: 1;
-	background: url(../images/work7/1.jpg) right center;
-}
-.case_show .work_list .shows .pics_show .page .front1,
-.case_show .work_list .shows .pics_show .page .back1{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-.case_show .work_list .shows .pics_show .page .front1{
-	background: url(../images/work7/0.jpg) right center;
-	transform: translateZ(1px);
-}
-.case_show .work_list .shows .pics_show .page .back1{
-	background: url(../images/work7/1.jpg);
-	transform: scale(-1,1);
-}
-/*css3图片展示效果-翻转*/
-.case_show .work_list .shows .pics_show .page-2{
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	transform-style: preserve-3d;
-	transform: perspective(800px) rotateY(0deg);
-}
-.case_show .work_list .shows .pics_show .page-2 .front2{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../images/work7/0.jpg);
-	transform: translateZ(1px);
-}
-.case_show .work_list .shows .pics_show .page-2 .back2{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../images/work7/1.jpg);
-	transform: scale(-1,1);
-}
-
-/*爆炸效果*/
-.case_show .work_list .shows .pics3{
-	background: url(../images/work7/1.jpg);
-}
-.case_show .work_list .shows .pics_show .page-3{
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: url(../images/work7/0.jpg);
-	z-index: 1;
-	transform-style: preserve-3d;
-	transform: perspective(800px) rotateX(0deg) rotateY(0deg) translate(0px,0px);
-}
-/*网格导航*/
-
-/*拼图游戏*/
-.case_show .work_list .shows_pin .shows_tit{
-	margin-left: 42%;
-}
-.case_show .work_list .shows .pin ul{
-	position: relative;
-	width: 336px;
-	height: 336px;
-	margin: 50px auto;
-}
-.case_show .work_list .shows .pin li{
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
+.about_me .my-info .info-list .info-details .details-box .contacts li:hover{
 	background: #ccc;
-	float: left;
-	border: 1px solid #fff;
+}
+.about_me .my-info .info-list .info-details .details-box .contacts li:hover span{
+	opacity: 1;
+}
+.about_me .my-info .info-list .info-details .details-box .contacts li span{
+	position: absolute;
+	right: -75px;
+	top: 50%;
+	margin-top: -11px;
+	width: 60px;
+	height: 22px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	background: #837F7F;
+	border-radius: 4px;
+	opacity: 0;
 	transition: 1s all ease;
 }
-.case_show .work_list .shows .pin li.mov{
-	background: none;
-	border: none;
+.about_me .my-info .info-list .info-skills .skill-box{
+	width: 900px;
+	height: 466px;
+	margin: 20px auto;
 }
+.about_me .my-info .info-list .info-skills .skill-txt{
+	padding-top: 40px;
+	width: 100%;
+	height: calc(50%-50px);
+}
+.about_me .my-info .info-list .info-skills .skill-txt p{
+	width: 680px;
+	font-size: 16px;
+	line-height: 34px;
+	color: #fff;
+	margin: 0 auto;
+}
+.about_me .my-info .info-list .info-skills .skill_lis{
+	width: 80%;
+	height: 40%;
+	margin: 30px auto 0; 
+	box-shadow: 0 0 10px #000;
+	background: #f7f7f7;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.about_me .my-info .info-list .info-skills .skill_lis li{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin: 20px;
+	cursor: pointer;
+}
+.about_me .my-info .info-list .info-skills .skill_lis li .skills-level{
+
+}
+.about_me .my-info .info-list .info-skills .skill_lis li span{
+	position: absolute;
+	left: 2px;
+	bottom: -40px;
+	width: 60px;
+	height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 25px;
+	background: #585858;
+	color: #fff;
+	opacity: 0;
+	transition: .5s all ease;
+	transform: translateY(-10px);
+}
+.about_me .my-info .info-list .info-skills .skill_lis li:hover span{
+	opacity: 1;
+	transform: translateY(0);
+}
+.about_me .my-info .info-list .info-skills .skill_lis li.html{
+	background: url(../images/html-icon.png) no-repeat center;
+	background-size: 30px 30px;
+}
+.about_me .my-info .info-list .info-skills .skill_lis li.js{
+	background: url(../images/js.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.ps{
+	background: url(../images/ps.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.jquery{
+	background: url(../images/jquery.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.ajax{
+	background: url(../images/ajax.png) no-repeat center;
+	background-size: 50px 50px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.html5{
+	background: url(../images/html5.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.github{
+	background: url(../images/github.png) no-repeat center;
+	background-size: 30px 30px;
+}
+.about_me .my-info .info-list .info-levels .skill_point h5{
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.about_me .my-info .info-list .info-levels .skill_point{
+	width: 1000px;
+	height: 470px;
+	margin: 40px auto 0;
+}
+.about_me .my-info .info-list .info-levels .skill_point li{
+	position: relative;
+	width: 220px;
+	height: 280px;
+	background: #eee; 
+	margin: 0 50px 40px 50px;
+	border-radius: 10px 10px 0 0;
+}
+.about_me .my-info .info-list .info-levels .skill_point li h6{
+	width: 100%;
+	height: 60px;
+	background: #e74c3c;
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	border-radius: 6px 6px 0 0;
+}
+.about_me .my-info .info-list .info-levels .skill_point li i{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -40%;
+	width: 80%;
+	height: 30px;
+	background: #e74c3c;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/*我的作品部分*/
+.my_works{
+	width: 100%;
+	height: calc(100%-50px);
+	position: relative;
+	background: url(../images/bg-icon.png) #d7d7d7;
+	background-size: 100%;
+}
+.my_works .work_tit,.my_works .work_txt{
+	color: #4D4D4D;
+}
+.my_works .list{
+	width: 1170px;
+	height: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+.my_works .list li{
+	position: relative;
+	width: 350px;
+	height: 240px;
+	overflow: hidden;
+	background: #ccc;
+	margin-right: 40px;
+	cursor: pointer;
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.my_works .list li a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+}
+.my_works .list li a h6{
+	font-size: 24px;
+	color: #fff;
+	line-height: 30px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.my_works .list li a p{
+	margin-left: 50px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.my_works .list .html{
+	background: url(../images/html_bg.JPG);
+	background-size: 350px 240px;
+}
+.my_works .list .jsc{
+	background: url(../images/js_bg.JPG);
+	background-size: 350px 240px;
+}
+.my_works .list .htm5{
+	background: url(../images/h5_bg.JPG);
+	background-size: 350px 240px;
+}
+
+.my_works .work_btn{
+	margin: 60px auto 0;
+	width: 160px;
+	height: 40px;
+	border: 1px solid #4E4C4C;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	color:#4D4D4D;
+	cursor: pointer;
+	transition: .5s all ease;
+}
+.my_works .work_btn:hover{
+	box-shadow: 0 0 10px #000;
+}
+
+
 
 /*footer部分*/
 .footer{
 	width: 100%;
-	height: 520px;
-	background: url(../images/footerbg.jpg);
+	height: auto;
+	background: url(../images/map.png) no-repeat #fff;
 	background-size: cover;
 	padding-top: 50px;
 }
-.footer h1{
-	color: #fff;
-	font-size: 40px;
-	text-align: center;
+.footer .foot_tit{
+	color: #5b6074;
 }
 .footer .contacts{
-	margin-left: 80px;
-	margin-top: 100px;
+	margin: 50px auto 0;
 	position: relative;
-	width: 400px;
-	height: 200px;
-	border: 2px solid #999;
-	padding: 50px;
-}
-.footer .contacts i{
-	position: absolute;
-	left: -2px;
-	top: -42px;
-	width: 120px;
-	height: 40px;
-	background: #10A7AF;
-	font-style: normal;
-	color: #fff;
-	text-align: center;
-	line-height: 40px;
+	width: 80%;
+	height: 500px;
 }
 .footer .contacts span{
 	display: block;
-	padding-left: 55px;
+	padding-left: 100px;
+	margin-left: 175px;
 	width: 300px;
-	height: 40px;
-	background-size: 40px 40px;
-	margin-bottom: 28px;
+	height: 60px;
+	background-size: 60px 60px;
+	margin-bottom: 60px;
 }
 .footer .contacts a{
 	position: relative;
-	color: #fff;
-	font-size: 20px;
-	line-height: 40px;
+	color: #5b6074;
+	font-size: 45px;
+	line-height: 60px;
 }
-.footer .contacts a:hover{
-	color: #999;
-}
+
 .footer .contacts a:hover em{
 	opacity: 1;
 }
@@ -836,24 +588,13 @@ html{
 	height: 3px;
 	background: #10A7AF;
 	opacity: 0;
-	transition: 1s all ease;
-}
-.footer .select_me{
-	margin-left: 180px;
-}
-.footer .select_me i{
-	left: 382px;
-}
-.footer .select_me p{
-	color: #fff;
-	font-size: 20px;
-	line-height: 40px;
+	transition: .6s all ease;
 }
 .footer .email{
 	background: url(../images/email.png) no-repeat;
 }
 .footer .qq{
-	background: url(../images/qq.png) no-repeat;
+	background: url(../images/detail-qq.png) no-repeat;
 }
 .footer .web-site{
 	background: url(../images/web.png) no-repeat;

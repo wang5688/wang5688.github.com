@@ -4,476 +4,262 @@
 	<meta charset="UTF-8">
 	<title>王汝侨 | 个人网站</title>
 	<link rel="icon" href="images/titicon.png" type="image/x-icon"/> <!--标题图标-->
-	<link rel="stylesheet" href="css/base.css">
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/89699/47031/57c19885f629d81604fb7d04.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/base.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/shCore.css"><!--代码高亮-->
-	<link rel="stylesheet" href="css/shCoreDefault.css"><!--代码高亮-->
-	<script src="js/common-min.js"></script>
-	<script src="js/script-min.js"></script>
-	<script src="js/shCore-min.js"></script><!--代码高亮-->
-	<script src="js/shBrushCss-min.js"></script>
-	<script>SyntaxHighlighter.all();</script>
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/common.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
+	<!-- 翻页标识 -->
+	<ol class="page_tip">
+		<li>
+			<span class="p_on"></span>
+			<p>首页</p>
+		</li>
+		<li>
+			<span></span>
+			<p>关于我</p>
+		</li>
+		<li>
+			<span></span>
+			<p>作品</p>
+		</li>
+		<li>
+			<span></span>
+			<p>联系我</p>
+		</li>
+	</ol>
 	<div class="content">
-			<!-- 导航条 -->
-		<div class="nav clearfix">
-			<h1 class="logo fl"></h1>
-			<ul class="fr">
-				<li class="fl">
-					<a href="#">首页<i></i></a>
-					<span>|</span>
-				</li>
-				<li class="fl">
-					<a href="#c2">关于我<i></i></a>
-					<span>|</span>
-				</li>
-				<li class="fl">
-					<a href="#c3">我的作品<i></i></a>
-					<span>|</span>
-				</li>
-				<li class="fl">
-					<a href="#c4">案例展示<i></i></a>
-					<span>|</span>
-				</li>
-				<li class="fl">
-					<a href="#c5">联系我<i></i></a>
-					<span>|</span>
-				</li>
-				<li class="fl">
-					<a href="javascript:;">选择我?<i></i></a>
-					
-				</li>
-			</ul>
-		</div>
-
-		<!-- 置顶按钮 -->
-		<div id="to_top"></div>
-
 		<!-- banner图 -->
-		<div class="banner">
-			<ul>
-				<li>
-					<div class="face"></div>
-					<h2 class='name'>王汝侨</h2>
-					<h3>专注于Web前端开发</h3>
-					<img src="images/bg3.jpg">
-				</li>
+		<div class="banner page" id="section0">
+			<ul class="main">
+				<div class="face animated slideInDown"></div>
+				<h2 class='name animated slideInDown'>王汝侨</h2>
+				<h3 class=" animated slideInDown">Web前端开发工程师</h3>
+				<h4 id="begin"></h4>
+				<!-- <img src="images/68W58PICY6E_1024.jpg"> -->
 			</ul>
 		</div>
 
-		<div id="resume_box" class="clearfix">
-			<span id="resume_close"></span>
-			<div class="left fl">
-				<div class="resume_face"></div>
-				<h6 class="resume_name">王汝侨</h6>
-			</div>
-			<div class="mid fl">
-				<h6 class="mid_tit">WHO AM I ?</h6>
-				<div class="resume_tips clearfix">
-					<span>web前端</span>
-					<span>有志青年^_^</span>
-					<span>程序猿</span>
-					<span>24岁</span>
-					<span>大学本科</span>
-					<span>志向成为大牛！</span>
-					<span>HTML5</span>
-					<span>熟悉互联网、web</span>
-					<span>CSS3</span>
-					<span>收下我！</span>
-				</div>
-				<HR style="margin: 18px 0 30px 18px;" width="90%" color=#6A6A6A SIZE=3 margin-top="18px">
-				<div class="resume_txt">
-					<p>一年互联网相关工作经验，以及前端相关工作。</p>
-					<p>于智能社接收web前端高级培训</p>
-					<p>熟练使用css、Javascript、jQuery等写程序</p>
-					<p>会使用HTML5+CSS3编写程序</p>
-					<p></p>
-				</div>
-			</div>
-		</div>
 		<!-- 关于我部分 -->
-		<div class="about_me clearfix">
-			<a id="c2"></a>
+		<div class="about_me clearfix page" id="section1">
 			<h2 class="tit">About Me</h2>
-			<h3>关于 · 我</h3>
-			<h4>热衷于新技术的学习和探讨，热衷页面布局。崇尚化繁为简理念对互联网发展趋势高兴趣关注，积极配合开发同事完成工作</h4>
-			<div class="my_resume" id="my_resume">我的简历</div>
-			<div class="right clearfix">
-				<ul class="my_skill fl">
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 30px; height: 50px; margin: -10px auto;"><svg width="50" height="50" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M332.107776 298.66496c-22.177792-22.212608-58.148864-22.212608-80.318464 0L78.260224 472.185856c-22.203392 22.168576-22.203392 58.139648 0 80.309248l173.529088 173.559808c11.0848 11.067392 25.638912 16.626688 40.159232 16.626688s29.06624-5.56032 40.159232-16.626688c22.168576-22.185984 22.168576-58.148864 0-80.330752L198.719488 512.345088l133.388288-133.379072C354.276352 356.788224 354.276352 320.825344 332.107776 298.66496zM946.397184 472.185856 772.859904 298.66496c-22.177792-22.212608-58.140672-22.212608-80.309248 0-22.177792 22.160384-22.177792 58.123264 0 80.300032l133.379072 133.379072L692.550656 645.72416c-22.177792 22.181888-22.177792 58.144768 0 80.330752 11.083776 11.067392 25.621504 16.626688 40.150016 16.626688 14.52032 0 29.074432-5.56032 40.159232-16.626688l173.538304-173.559808C968.592384 530.326528 968.592384 494.354432 946.397184 472.185856zM598.665216 285.824c-29.27616-11.311104-62.152704 3.321856-73.404416 32.596992L391.593984 665.476096c-11.25888 29.284352 3.295232 62.117888 32.571392 73.411584 6.730752 2.57024 13.654016 3.811328 20.402176 3.811328 22.815744 0 44.32896-13.846528 53.009408-36.400128l133.676032-347.063296C642.504704 329.96864 627.914752 297.08288 598.665216 285.824z" fill="#000000"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>HTML</h5>
-							<p>HTML是web前端开发的骨架，最为基础且最为重要的部分，一个好的布局能够减少js代码，提高程序编写的速度，用HTML布局较为熟练。</p>
+			<h3 class="sec_tit">关于 · 我</h3>
+			<div class="my-info">
+				<span id="info-btn-prev"></span>
+				<span id="info-btn-next"></span>
+				<ul class="info-list clearfix" id="info-list">
+					<li class="info-skills fl">
+						<div class="skill-box">
+							<div class="skill-txt">
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同事熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQueri-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
+								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
+							</div>
+							<ul class="skill_lis clearfix">
+								<li class="html fl">
+									<span>HTML</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl js">
+									<span>JS</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl jquery">
+									<span>jQuery</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl ajax">
+									<span>Ajax</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl html5">
+									<span>HTML5</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl github">
+									<span>github</span>
+									<div class="skills-level"></div>
+								</li>
+							</ul>
+						</div>						
+					</li>
+					<li class="info-details fl">
+						<div class="details-box clearfix">
+							<div class="faces fl"></div>
+							<div class="details fl">
+								<h4>王汝侨</h4>
+								<hr style="margin-bottom: 20px;">
+								<div class="basic">
+									<p><span>年龄：</span>24</p>
+									<p><span>学历：</span>大学本科</p>
+									<p><span>Email：</span>wangruqiao890@126.com</p>
+									<p><span>求职意向：</span>前端开发工程师</p>
+									<p class="info-tip"><span>到岗时间：</span>随时到岗</p>
+								</div>
+							</div>
+							<div class="contacts fl">
+								<ul>
+									<li><span>QQ</span><i class="detail-qq"></i></li>
+									<li><span>Wechat</span><i class="detail-wechat"></i></li>
+									<li><span>Email</span><i class="detail-email"></i></li>
+									<li><span>GitHub</span><i class="detail-git"></i></li>
+								</ul>
+							</div>
+							<a href="my_resume/rusume.doc" class="my-resume"><span class="down">下载我的简历</span></a>
 						</div>
 					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 30px; height: 50px; margin: -10px auto;"><svg width="40" height="50" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M458.1856 114.4l-155.9008 0 0 499.3856c0 123.5664-35.1408 158.0688-96.2976 158.0688-28.656 0-54.4624-5.9216-74.5392-14.2464L115.2 903.8c28.6464 11.8944 72.6064 19.024 107.0032 19.024 140.4032 0 235.9824-79.5952 235.9824-307.8096L458.1856 114.4 458.1856 114.4 458.1856 114.4zM458.1856 114.4M737.3664 115.1792c-147.2128 0-240.3952 100.8608-240.3952 234.1696 0 114.808 71.7616 186.6896 176.1008 233.0512 75.4656 32.4544 105.2976 61.456 105.2976 108.9744 0 52.1664-34.4816 85.7968-99.7008 85.7968-60.568 0-115.5504-24.3968-152.8192-48.7312l0-0.0448-28.8784 144.9248c35.432 24.384 101.5856 48.7232 173.2976 48.7232 172.3888-0.0064 252.504-111.3008 252.504-242.296 0-111.2944-51.2432-183.16-162.104-234.1952-82.0032-39.4048-116.4656-61.4224-116.4656-111.2752 0-39.4272 29.8208-75.3456 91.3216-75.3456 60.5328 0 102.1648 24.5472 126.4224 39.6336l36.3504-146.7072C860.2784 131.7296 809.0784 115.1792 737.3664 115.1792L737.3664 115.1792 737.3664 115.1792zM737.3664 115.1792" fill="#272636"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>JavaScript</h5>
-							<p>what is javascript? 一门神奇的语言 ^_^ ！ 写个效果、轮播图等、web站基本功能，本人可以完成好这项工作。</p>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 30px; height: 50px; margin: 2px auto;"><svg width="35" height="25" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M195.865772 640.85906l0 369.395973L0 1010.255034 0 15.463087l324.724832 0c72.161074 0 127.14094 8.590604 166.657718 27.489933 37.798658 18.899329 72.161074 51.543624 103.087248 99.651007s44.671141 106.52349 44.671141 176.966443c0 49.825503-8.590604 96.214765-24.053691 142.604027-15.463087 46.389262-39.516779 82.469799-68.724832 109.959732-29.208054 27.489933-58.416107 44.671141-85.90604 53.261745-27.489933 8.590604-70.442953 13.744966-128.85906 13.744966L195.865772 639.14094zM188.993289 458.738255l125.422819 0c48.107383 0 80.751678-13.744966 101.369128-39.516779 18.899329-27.489933 29.208054-56.697987 29.208054-91.060403 0-39.516779-10.308725-72.161074-32.644295-96.214765-22.33557-24.053691-54.979866-36.080537-97.932886-36.080537L188.993289 195.865772 188.993289 458.738255zM1316.080537 233.66443 1151.14094 300.671141c-22.33557-79.033557-68.724832-118.550336-140.885906-118.550336-75.597315 0-115.114094 29.208054-115.114094 89.342282 0 24.053691 6.872483 44.671141 20.61745 60.134228 13.744966 17.181208 46.389262 30.926174 96.214765 42.95302 84.187919 20.61745 146.040268 41.234899 183.838926 61.852349 39.516779 20.61745 72.161074 54.979866 97.932886 101.369128 27.489933 46.389262 39.516779 97.932886 39.516779 154.630872 0 89.342282-29.208054 166.657718-85.90604 233.66443-56.697987 65.288591-142.604027 97.932886-254.281879 97.932886-84.187919 0-156.348993-22.33557-216.483221-68.724832-60.134228-46.389262-97.932886-115.114094-116.832215-206.174497l178.684564-48.107383c20.61745 92.778523 75.597315 139.167785 168.375839 139.167785 44.671141 0 77.315436-10.308725 99.651007-30.926174 22.33557-20.61745 32.644295-44.671141 32.644295-73.879195 0-29.208054-10.308725-51.543624-29.208054-67.006711-18.899329-15.463087-58.416107-30.926174-113.395973-44.671141-104.805369-25.771812-180.402685-61.852349-225.073826-108.241611-44.671141-44.671141-67.006711-111.677852-67.006711-199.302013 0-87.624161 27.489933-163.221477 80.751678-223.355705S912.322148 0 1003.38255 0C1166.604027 0 1269.691275 77.315436 1316.080537 233.66443z" fill="#272636"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>PhotoShop</h5>
-							<p>前端开发中PhotoShop并不是用的很多，因为以前工作需求全部为自己自学，修个图、调整个排版不在话下，如有工作需要尽管派遣。</p>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<img src="images/jquery.png" alt="">
-						</div>
-						<div class="skill_txt fl">
-							<h5>jQuery</h5>
-							<p>这货还用多说吗？不必说了！不会都不好意思说我是搞前端开发的，任性。</p>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 50px; height: 50px; margin: -20px auto;"><svg width="70" height="70" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M132.857 387.309h68.007l95.811 259.134h-69.5l-15.885-46.663h-89.359l-16.382 46.663h-68.506l95.811-259.134zM136.826 550.134h58.083l-28.297-90.845h-0.494l-29.289 90.845zM338.872 577.935c0 0 7.94 19.361 24.325 19.361 15.39 0 23.828-12.412 23.828-37.232v-172.756h66.522v177.22c0 58.083-29.289 86.875-89.853 87.375-37.73 0-59.072-23.828-63.543-35.745l38.72-38.228zM548.363 387.309h68.007l95.811 259.134h-69.5l-15.885-46.663h-89.359l-16.382 46.663h-68.506l95.811-259.134zM552.331 550.134h58.083l-28.297-90.845h-0.494l-29.289 90.845zM816.431 510.42l-83.893-123.109h78.433l43.189 80.918 45.67-80.918h75.956l-82.903 123.109 90.845 136.022h-81.415l-48.155-86.375-52.126 86.375h-76.947z" fill="#272636"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>Ajax数据交互</h5>
-							<p>互联网的世界离不开数据，ajax无刷新页面获取数据也是非常的实用，目前各大网站几乎都用的上此方法获取数据，我个人也是比较喜欢做数据交互。</p>
-						</div>
-					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 30px; height: 50px; margin: 0 auto;"><svg width="50" height="50" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M60.544 0l82.144 921.632L511.424 1024l369.728-102.528L963.456 0 60.544 0zM784.64 301.44l-0.384 0L352.096 301.44l10.304 115.744L774.368 417.184l-31.04 347.008L511.968 828.352l-0.224 0.064-0.16 0-0.128 0-231.584-64.256-15.84-177.504 113.504 0 8.064 90.24 125.856 33.92 0.288-0.064 125.92-33.984 13.056-146.56L259.008 530.208 228.512 188.416l566.208 0L784.64 301.44z" fill="#272636"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>HTML5+CSS3</h5>
-							<p>哇哦，大热的H5+CSS3简直太神奇了。本人对H5做出的效果相对痴迷，喜欢研究出新的效果，掌握程度还算熟练。</p>
+					<li class="info-levels fl">
+						<div class="skill_point">
+							<h5>Skills Level</h5>
+							<ul class="clearfix">
+								<li class="fl">
+									<h6>html+css</h6>
+									<canvas id="c1" width="220" height="180"></canvas>
+									<i>95%</i>
+								</li class="clearfix">
+								<li class="fl">
+									<h6 style="background: #3498db;">JavaScript</h6>
+									<canvas id="c2" width="220" height="180"></canvas>
+									<i style="background: #3498db;">85%</i>
+								</li class="clearfix">
+								<li class="fl">
+									<h6 style="background: #18bc9c;">jQuery</h6>
+									<canvas id="c3" width="220" height="180"></canvas>
+									<i style="background: #18bc9c;">80%</i>
+								</li class="clearfix">
+								<li class="fl">
+									<h6 style="background: #f39c12;">Ajax</h6>
+									<canvas id="c4" width="220" height="180"></canvas>
+									<i style="background: #f39c12;">90%</i>
+								</li class="clearfix">
+								<li class="fl">
+									<h6 style="background: #12F3E8;">HTML5+CSS3</h6>
+									<canvas id="c5" width="220" height="180"></canvas>
+									<i style="background: #12F3E8;">85%</i>
+								</li class="clearfix">
+								<li class="fl">
+									<h6 style="background: #DB3460;">github</h6>
+									<canvas id="c6" width="220" height="180"></canvas>
+									<i style="background: #DB3460;">85%</i>
+								</li>
+							</ul>
 						</div>
 					</li>
-					<li class="clearfix">
-						<div class="skill_icon fl">
-							<div data-width="200" data-height="200" class="svg-box" style="width: 30px; height: 50px; margin: -6px auto;"><svg width="50" height="50" viewBox="0 0 250 200"><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M511.974 15.759C229.233 15.759 0.007 243.57 0.007 524.59c0 224.8 146.666 415.512 350.136 482.754 25.628 4.711 34.95-10.96 34.95-24.484 0-12.057-0.45-44.031-0.67-86.54-142.426 30.776-172.48-68.219-172.48-68.219-23.285-58.771-56.852-74.403-56.852-74.403-46.487-31.547 3.531-30.931 3.531-30.931 51.379 3.613 78.423 52.414 78.423 52.414 45.66 77.76 119.846 55.257 149.005 42.312 4.632-32.941 17.891-55.315 32.5-68.063-113.673-12.834-233.188-56.485-233.188-251.45 0-55.567 19.938-100.992 52.684-136.569-5.239-12.81-22.843-64.543 5.026-134.628 0 0 42.982-13.667 140.811 52.2 40.816-11.334 84.622-16.997 128.166-17.17 43.483 0.187 87.302 5.836 128.173 17.17 97.76-65.867 140.68-52.2 140.68-52.2 27.938 70.085 10.34 121.819 5.096 134.628 32.813 35.576 52.613 81.002 52.613 136.569 0 195.419-119.688 238.473-233.746 251.021 18.354 15.723 34.736 46.839 34.736 94.317 0 67.98-0.613 122.837-0.613 139.531 0 13.627 9.203 29.479 35.195 24.435 203.246-67.386 349.811-257.956 349.811-482.692C1023.994 243.57 794.762 15.759 511.974 15.759z" fill="#272636"></path></g></g></svg></div>
-						</div>
-						<div class="skill_txt fl">
-							<h5>Github</h5>
-							<p>This skill is get.</p>
+					<li class="info-skills fl">
+						<div class="skill-box">
+							<div class="skill-txt">
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同事熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQueri-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
+								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
+							</div>
+							<ul class="skill_lis clearfix">
+								<li class="html fl">
+									<span>HTML</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl js">
+									<span>JS</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl jquery">
+									<span>jQuery</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl ajax">
+									<span>Ajax</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl html5">
+									<span>HTML5</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl github">
+									<span>github</span>
+									<div class="skills-level"></div>
+								</li>
+							</ul>
+						</div>						
+					</li>
+					<li class="info-details fl">
+						<div class="details-box clearfix">
+							<div class="faces fl"></div>
+							<div class="details fl">
+								<h4>王汝侨</h4>
+								<hr style="margin-bottom: 20px;">
+								<div class="basic">
+									<p><span>年龄：</span>24</p>
+									<p><span>学历：</span>大学本科</p>
+									<p><span>Email：</span>wangruqiao890@126.com</p>
+									<p><span>求职意向：</span>前端开发工程师</p>
+									<p class="info-tip"><span>到岗时间：</span>随时到岗</p>
+								</div>
+							</div>
+							<div class="contacts fl">
+								<ul>
+									<li><span>QQ</span><i class="detail-qq"></i></li>
+									<li><span>Wechat</span><i class="detail-wechat"></i></li>
+									<li><span>Email</span><i class="detail-email"></i></li>
+									<li><span>GitHub</span><i class="detail-git"></i></li>
+								</ul>
+							</div>
 						</div>
 					</li>
 				</ul>
-				<div class="my_abily fl">
-					<div class="overal"></div>
-					<h6 class="overal_poin">综合能力：<span class="point">86</span>分</h6>
-				</div>
 			</div>
 		</div>
 
-		<div class="my_works">
-			<a id="c3"></a>
-			<h2 class="tit work_tit">My Works</h2>
-			<p class="txt work_txt">少即是多 化繁为简 做到极致 作品即自己 专注自己</p>
+		<!-- my works部分 -->
+		<div class="my_works page" id="section2">
+			<h2 class="tit work_tit animated fadeInDown">My Works</h2>
+			<p class="txt work_txt animated fadeInDown">少即是多 化繁为简 做到极致 作品即自己 专注自己</p>
 			<ul class="list clearfix">
-				<li class="l2">
-					<div><img src="images/work2/1.jpg" alt=""></div>
-					<div><img src="images/work2/2.jpg" alt=""></div>
+				<li class="html fl animated zoomIn">
+					<a href="works1/index.html" target="_blank">
+						<h6>HTML+CSS</h6>
+						<p>1.html静态网页展示</p>
+						<p>2.模仿各大网站主页</p>
+						<p>3.使用css+div布局实现</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
 				</li>
-				<li class="l1">
-					<div><img src="images/work2/3.jpg" alt=""></div>
-					<div><img src="images/work2/4.jpg" alt=""></div>
+				<li class="jsc fl animated zoomIn" target="_blank">
+					<a href="works2/index.html">
+						<h6>JavaScript</h6>
+						<p>1.JavaScript效果展示</p>
+						<p>2.原生JavaScript编写</p>
+						<p>3.熟悉面向对象思想</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
 				</li>
-				<li class="cur1">
-					<div><img src="images/work2/5.jpg" alt=""></div>
-					<div><img src="images/work2/6.jpg" alt=""></div>
-				</li>
-				<li class="cur2">
-					<div><img src="images/work2/7.jpg" alt=""></div>
-					<div><img src="images/work2/8.jpg" alt=""></div>
-				</li>
-				<li class="r1">
-					<div><img src="images/work2/9.jpg" alt=""></div>
-					<div><img src="images/work2/10.jpg" alt=""></div>
-				</li>
-				<li class="r2">
-					<div><img src="images/work2/11.jpg" alt=""></div>
-					<div><img src="images/work2/12.jpg" alt=""></div>
-				</li>
-			</ul>
-			<div class="more_btn clearfix">
-				<span class="more_prev fl">&lt;</span>
-				<span class="more_next fl">&gt;</span>
-			</div>
-		</div>
-
-		<!-- 案例展示部分 -->
-		<div class="case_show">
-			<a id="c4"></a>
-			<ul class="work_list">
-				<li class="shows shows-1">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">拖拽照片墙</h3>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">利用js中碰撞检测、以及运动函数，做出此效果</p>
-					<div class="screen_box works_box clearfix">
-						<div id="drag_btn" onselectstart="return false" onselect="document.selection.empty()">随机换一下</div>
-						<ul class="fl">
-							<li><img src="images/cat/1.jpg" alt=""></li>
-							<li><img src="images/cat/2.jpg" alt=""></li>
-							<li><img src="images/cat/3.jpg" alt=""></li>
-							<li><img src="images/cat/4.jpg" alt=""></li>
-							<li><img src="images/cat/5.jpg" alt=""></li>
-							<li><img src="images/cat/6.jpg" alt=""></li>
-							<li><img src="images/cat/7.jpg" alt=""></li>
-							<li><img src="images/cat/8.jpg" alt=""></li>
-							<li><img src="images/cat/9.jpg" alt=""></li>
-						</ul>
-						<div class="drag_code fl">
-							<h6>源代码</h6>
-							<pre class="brush: css;">
-		var oScreenBox = document.querySelector('.screen_box');
-		var aScrLi = oScreenBox.querySelectorAll('li');
-		var oDragBtn = document.getElementById('drag_btn');
-		var dragArr = [];
-		// 布局转换
-		for(var i=0; i&lt;aScrLi.length; i++){
-			dragArr.push({
-				left : aScrLi[i].offsetLeft,
-				top : aScrLi[i].offsetTop
-			});
-		}
-		for(var i=0; i&lt;aScrLi.length; i++){
-			aScrLi[i].style.position = 'absolute';
-			aScrLi[i].style.left = dragArr[i].left + 'px';
-			aScrLi[i].style.top = dragArr[i].top + 'px';
-			aScrLi[i].style.margin = 0;
-			var zIndex = 20;
-		}
-		// 随机换一下
-		oDragBtn.onclick = function(){
-			dragArr.sort(function(){
-				return Math.random()-.5;
-			});
-			for(var i=0; i&lt;dragArr.length; i++){
-				move(aScrLi[i],{
-					left : dragArr[i].left,
-					top : dragArr[i].top
-				});
-			}
-		}
-		// 拖拽
-		function drag(obj){
-			obj.onmousedown = function(ev){
-				var disX = ev.clientX - obj.offsetLeft;
-				var disY = ev.clientY - obj.offsetTop;
-				obj.style.zIndex = zIndex++;
-				document.onmousemove = function(ev){
-					var l = ev.clientX - disX;
-					var t = ev.clientY - disY;
-					var oNear = findNear(obj);
-					for(var i=0; i&lt;aScrLi.length; i++){
-						aScrLi[i].style.border = '3px solid #666';
-					}
-					if(oNear){
-						oNear.style.border = '3px dashed red';
-					}
-
-					obj.style.left = l + 'px';
-					obj.style.top = t + 'px';
-				}
-				document.onmouseup = function(){
-					document.onmousemove = null;
-					document.onmouseup = null;
-
-					var oNear = findNear(obj);
-
-					if(oNear){
-						move(oNear,{
-							left : dragArr[obj.index].left,
-							top : dragArr[obj.index].top
-						});
-						move(obj,{
-							left : dragArr[oNear.index].left,
-							top : dragArr[oNear.index].top
-						});
-						var car;
-						car = oNear.index;
-						oNear.index = obj.index;
-						obj.index = car;
-						oNear.style.border = '3px solid #666';
-					}else{
-						move(obj,{
-							left : dragArr[obj.index].left,
-							top : dragArr[obj.index].top
-						});
-					}
-				}
-				return false;
-			}
-		}
-		for(var i=0; i&lt;aScrLi.length; i++){
-			drag(aScrLi[i]);
-			aScrLi[i].index = i;
-		}
-		// 碰撞检测
-		function collTest(obj,obj2){
-			var l1 = obj.offsetLeft;
-			var t1 = obj.offsetTop;
-			var r1 = obj.offsetLeft + obj.offsetWidth;
-			var b1 = obj.offsetTop + obj.offsetHeight;
-			var l2 = obj2.offsetLeft;
-			var t2 = obj2.offsetTop;
-			var r2 = obj2.offsetLeft + obj2.offsetWidth;
-			var b2 = obj2.offsetTop + obj2.offsetHeight;
-			if(r1 &lt; l2 || b1 &lt; t2 || l1 > r2 || t1 > b2){
-				return false;
-			}else{
-				return true;
-			}
-		}
-		// 求两物体间距离
-		function getDis(obj,obj2){
-			var a = obj2.offsetLeft - obj.offsetLeft;
-			var b = obj2.offsetTop - obj.offsetTop;
-			return Math.sqrt(a*a+b*b);
-		}
-		// 找出里的最近的div
-		function findNear(obj){
-			var iMin = 99999999;
-			var iMinIndex = -1;
-			for(var i=0; i&lt;aScrLi.length; i++){
-				if(obj == aScrLi[i])continue;
-				if(collTest(obj,aScrLi[i])){
-					var dis = getDis(obj,aScrLi[i]);
-					if(dis &lt; iMin){
-						iMin = dis;
-						iMinIndex = i;
-					}
-				}
-			}
-			if(iMinIndex == -1){
-				return false;
-			}else{
-				return aScrLi[iMinIndex];
-			}
-		}
-							</pre class="brush: css;">
-						</div>
-					</div>
-				</li>
-				<li class="shows shows-2">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">H5环绕拖拽展示图片</h3>
-						<span class="h5 show_tips fl"></span>
-						<span class="css3 show_tips fl"></span>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">HTML5+CSS3样式，运动的方法配合js代码</p>
-					<div class="surround_box works_box">
-						<ul>
-							<li><img src="images/work3/1.jpg" alt=""></li>
-							<li><img src="images/work3/2.jpg" alt=""></li>
-							<li><img src="images/work3/3.jpg" alt=""></li>
-							<li><img src="images/work3/4.jpg" alt=""></li>
-							<li><img src="images/work3/5.jpg" alt=""></li>
-							<li><img src="images/work3/6.jpg" alt=""></li>
-							<li><img src="images/work3/7.jpg" alt=""></li>
-							<li><img src="images/work3/8.jpg" alt=""></li>
-							<li><img src="images/work3/9.jpg" alt=""></li>
-							<li><img src="images/work3/10.jpg" alt=""></li>
-							<li><img src="images/work3/11.jpg" alt=""></li>
-							<li><img src="images/work3/12.jpg" alt=""></li>
-						</ul>
-					</div>
-				</li>
-
-				<li class="shows shows-3">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">旋转合并的照片墙</h3>
-						<span class="h5 show_tips fl"></span>
-						<span class="css3 show_tips fl"></span>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">HTML5+CSS3样式，运动的方法配合js代码</p>
-					<div class="turn_box works_box">
-					<a href="javascript:;" id="turn_next"></a>
-					<a href="javascript:;" id="turn_prev"></a>
-						<!-- <div class="turn_lis"><span class="turn_s"></span></div> -->
-					</div>
-				</li>
-
-				<li class="shows shows-3">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">CSS3展示效果-翻页</h3>
-						<span class="h5 show_tips fl"></span>
-						<span class="css3 show_tips fl"></span>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">HTML5+CSS3样式，运动的方法配合js代码</p>
-					<div class="pics_show">
-						<div class="page">
-							<div class="front1"></div>
-							<div class="back1"></div>
-						</div>
-						<div class="page2"></div>
-					</div>
-					<div class="pics_btns">
-						<a href="javascript:;" id="pics_btn1">翻页</a>
-					</div>
-				</li>
-
-				<li class="shows shows-3">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">CSS3展示效果-翻转</h3>
-						<span class="h5 show_tips fl"></span>
-						<span class="css3 show_tips fl"></span>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">HTML5+CSS3样式，运动的方法配合js代码</p>
-					<div class="pics_show pics2"></div>
-					<div class="pics_btns">
-						<a href="javascript:;" id="pics_btn2">翻转</a>
-					</div>
-				</li>
-
-				<li class="shows shows-3">
-					<div class="shows_tit clearfix">
-						<h3 class="fl">CSS3展示效果-爆炸</h3>
-						<span class="h5 show_tips fl"></span>
-						<span class="css3 show_tips fl"></span>
-						<span class="js show_tips fl"></span>
-					</div>
-					<p class="explains">HTML5+CSS3样式，运动的方法配合js代码</p>
-					<div class="pics_show pics3"></div>
-					<div class="pics_btns">
-						<a href="javascript:;" id="pics_btn3">爆炸</a>
-					</div>
+				<li class="htm5 fl animated zoomIn" target="_blank">
+					<a href="works3/index.html">
+						<h6>HTML5+CSS3</h6>
+						<p>1.H5+CSS3作品展示</p>
+						<p>2.精通HTML5网页布局</p>
+						<p>3.能够写出H5网站</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
 				</li>
 			</ul>
+			<div class="work_btn">查看作品</div>
 		</div>
-		
+
 		<!-- 底部脚部分 -->
-		<div class="footer clearfix">
-			<a id="c5"></a>
-			<h1>CONTACT</h1>
-			<div class="contacts fl">
-				<i>Contact me</i>
+		<div class="footer page" id="section3">
+			<h1 class="tit foot_tit">CONTACT</h1>
+			<div class="contacts">
 				<span class="email">
-					<a href="mailto:wangruqiao890@126.com">wangruqiao890@126.com<em></em></a>
+					<a href="mailto:wangruqiao890@126.com" style="font-family:'COCOGOOSE57165136d15e63';">wangruqiao890@126.com<em></em></a>
 				</span>
 				<span class="qq">
-					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=568027610&site=qq&menu=yes">568027610<em></em></a>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=568027610&site=qq&menu=yes" style="font-family:'COCOGOOSE57165136d15e63';">568027610<em></em></a>
 				</span>
 				<span class="web-site">
-					<a href="https://wang5688.github.io" target="_blank">wang5688.github.io<em></em></a>
+					<a href="https://wang5688.github.io" target="_blank" style="font-family:'COCOGOOSE57165136d15e63';">wang5688.github.io<em></em></a>
 				</span>
-			</div>
-			<div class="contacts select_me fl">
-				<i>Choose me</i>
-			
 			</div>
 		</div>
 	</div>
