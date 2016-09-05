@@ -6,10 +6,10 @@
 	<link rel="icon" href="images/titicon.png" type="image/x-icon"/> <!--标题图标-->
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/89699/47031/57c19885f629d81604fb7d04.css' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/base.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<script src="js/common.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/common.min.js"></script>
+	<script src="js/script.min.js"></script>
 </head>
 <body>
 	<!-- 翻页标识 -->
@@ -44,7 +44,7 @@
 		</div>
 
 		<!-- 关于我部分 -->
-		<div class="about_me clearfix page" id="section1">
+		<div class="about_me clearfix page show" id="section1">
 			<h2 class="tit">About Me</h2>
 			<h3 class="sec_tit">关于 · 我</h3>
 			<div class="my-info">
@@ -54,7 +54,7 @@
 					<li class="info-skills fl">
 						<div class="skill-box">
 							<div class="skill-txt">
-								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同事熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同时熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
 								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQueri-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
 								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
 							</div>
@@ -114,44 +114,49 @@
 					<li class="info-levels fl">
 						<div class="skill_point">
 							<h5>Skills Level</h5>
-							<ul class="clearfix">
-								<li class="fl">
-									<h6>html+css</h6>
-									<canvas id="c1" width="220" height="180"></canvas>
-									<i>95%</i>
-								</li class="clearfix">
-								<li class="fl">
-									<h6 style="background: #3498db;">JavaScript</h6>
-									<canvas id="c2" width="220" height="180"></canvas>
-									<i style="background: #3498db;">85%</i>
-								</li class="clearfix">
-								<li class="fl">
-									<h6 style="background: #18bc9c;">jQuery</h6>
-									<canvas id="c3" width="220" height="180"></canvas>
-									<i style="background: #18bc9c;">80%</i>
-								</li class="clearfix">
-								<li class="fl">
-									<h6 style="background: #f39c12;">Ajax</h6>
-									<canvas id="c4" width="220" height="180"></canvas>
-									<i style="background: #f39c12;">90%</i>
-								</li class="clearfix">
-								<li class="fl">
-									<h6 style="background: #12F3E8;">HTML5+CSS3</h6>
-									<canvas id="c5" width="220" height="180"></canvas>
-									<i style="background: #12F3E8;">85%</i>
-								</li class="clearfix">
-								<li class="fl">
-									<h6 style="background: #DB3460;">github</h6>
-									<canvas id="c6" width="220" height="180"></canvas>
-									<i style="background: #DB3460;">85%</i>
-								</li>
-							</ul>
+							<div id="scroll">
+								<span id="bar"></span>
+							</div>
+							<div class="bar-list">
+								<ul class="clearfix" id="bar-list">
+									<li class="fl">
+										<h6>html+css</h6>
+										<canvas id="c1" width="220" height="180"></canvas>
+										<i>95%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #3498db;">JavaScript</h6>
+										<canvas id="c2" width="220" height="180"></canvas>
+										<i style="background: #3498db;">85%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #18bc9c;">jQuery</h6>
+										<canvas id="c3" width="220" height="180"></canvas>
+										<i style="background: #18bc9c;">80%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #f39c12;">Ajax</h6>
+										<canvas id="c4" width="220" height="180"></canvas>
+										<i style="background: #f39c12;">90%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #12F3E8;">HTML5+CSS3</h6>
+										<canvas id="c5" width="220" height="180"></canvas>
+										<i style="background: #12F3E8;">85%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #DB3460;">github</h6>
+										<canvas id="c6" width="220" height="180"></canvas>
+										<i style="background: #DB3460;">85%</i>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</li>
 					<li class="info-skills fl">
 						<div class="skill-box">
 							<div class="skill-txt">
-								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同事熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同时熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
 								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQueri-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
 								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
 							</div>
@@ -216,7 +221,7 @@
 			<h2 class="tit work_tit animated fadeInDown">My Works</h2>
 			<p class="txt work_txt animated fadeInDown">少即是多 化繁为简 做到极致 作品即自己 专注自己</p>
 			<ul class="list clearfix">
-				<li class="html fl animated zoomIn">
+				<li class="html fl">
 					<a href="works1/index.html" target="_blank">
 						<h6>HTML+CSS</h6>
 						<p>1.html静态网页展示</p>
@@ -225,8 +230,8 @@
 						<p>点击查看&gt;&gt;</p>
 					</a>
 				</li>
-				<li class="jsc fl animated zoomIn" target="_blank">
-					<a href="works2/index.html">
+				<li class="jsc fl" target="_blank">
+					<a href="works3/index.html">
 						<h6>JavaScript</h6>
 						<p>1.JavaScript效果展示</p>
 						<p>2.原生JavaScript编写</p>
@@ -234,8 +239,8 @@
 						<p>点击查看&gt;&gt;</p>
 					</a>
 				</li>
-				<li class="htm5 fl animated zoomIn" target="_blank">
-					<a href="works3/index.html">
+				<li class="htm5 fl" target="_blank">
+					<a href="works2/index.html">
 						<h6>HTML5+CSS3</h6>
 						<p>1.H5+CSS3作品展示</p>
 						<p>2.精通HTML5网页布局</p>
@@ -244,7 +249,7 @@
 					</a>
 				</li>
 			</ul>
-			<div class="work_btn">查看作品</div>
+			<a href="works1/index.html" class="work_btn">查看作品</a>
 		</div>
 
 		<!-- 底部脚部分 -->

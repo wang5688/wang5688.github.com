@@ -6,7 +6,6 @@ domReady(function(){
 		var winH = document.documentElement.clientHeight;
 
 		window.onload = function(){
-			console.log(winW)
 			for(var i=0; i<aPage.length; i++){
 				aPage[i].style.width = winW + 'px';
 				aPage[i].style.height = winH + 'px';
@@ -185,8 +184,8 @@ domReady(function(){
 		drawLev(85,'c2','#3498db');
 		drawLev(80,'c3','#2ecc71');
 		drawLev(90,'c4','#f39c12');
-		drawLev(85,'c5','#e74c3c');
-		drawLev(95,'c6','#e74c3c');
+		drawLev(85,'c5','#12F3E8');
+		drawLev(95,'c6','#DB3460');
 
 		function drawLev(lev,id,col){
 			var oC = document.getElementById(id);
@@ -207,6 +206,49 @@ domReady(function(){
 				gd.closePath();
 				gd.fill();
 			};
+		}
+
+		var oScroll = document.getElementById('scroll');
+		var oBar = oScroll.children[0];
+		var oUl = document.getElementById('bar-list');
+		var oCont = document.querySelector('.bar-list');
+
+		oScroll.onmouseover = function(){
+			this.style.transition = '.7s all ease';
+			this.style.opacity = 1;
+		}
+		oScroll.onmouseout = function(){
+			this.style.transition = '.7s all ease';
+			this.style.opacity = 0.1;
+		}
+
+		oBar.onmousedown = function(ev){
+			var disY = ev.clientY - oBar.offsetTop;
+
+			oScroll.style.opacity = 1;
+
+			document.onmousemove = function(ev){
+				oScroll.style.opacity = 1;
+				var t = ev.clientY - disY;
+
+				if(t < 0){
+					t = 0;
+				}
+				if(t > oScroll.offsetHeight - oBar.offsetHeight){
+					t = oScroll.offsetHeight - oBar.offsetHeight;
+				}
+
+				var scale = oBar.offsetTop / (oScroll.offsetHeight - oBar.offsetHeight);
+				oUl.style.top = -oCont.offsetHeight * scale + 'px';
+
+				oBar.style.top = t + 'px';
+			}
+			document.onmouseup = function(){
+				oScroll.style.opacity = 0;
+				document.onmousemove = null;
+				document.onmouseup = null;
+			}
+			return false;
 		}
 	})();
 
@@ -229,5 +271,6 @@ domReady(function(){
 			}
 		}
 	})();
+
 
 });
