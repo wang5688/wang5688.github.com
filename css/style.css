@@ -8,10 +8,9 @@ html {
 }
 
 .content {
-	width: 1366px;
+	width: auto;
 	overflow: hidden;
 	height: auto;
-	margin: 0 auto;
 }
 
 /*翻页标志*/
@@ -135,7 +134,7 @@ html {
 
 .content .tit {
 	margin: 0 auto;
-	padding-top: 26px;
+	padding-top: 1em;
 	text-align: center;
 	color: #fff;
 	font-size: 50px;
@@ -182,15 +181,13 @@ html {
 }
 
 .about_me .my-info #info-btn-prev {
-	left: 80px;
-	background: url(spritesheet.png) no-repeat;
-	background-position: -813px -200px;
+	left: 12%;
+	background: url(../images/arrows.png) no-repeat;
 }
 
 .about_me .my-info #info-btn-next {
-	right: 80px;
-	background: url(spritesheet.png) no-repeat 0 -30px;
-	background-position: -813px -200px;
+	right: 12%;
+	background: url(../images/arrows.png) no-repeat 0 -30px;
 }
 
 .about_me .my-info .info-list {
@@ -217,7 +214,7 @@ html {
 	width: 880px;
 	height: 460px;
 	background: #eee;
-	margin: 20px auto;
+	margin: 40px auto;
 	border: 3px solid #dcdcdc;
 	box-shadow: 0 0 6px #000;
 }
@@ -227,8 +224,7 @@ html {
 	height: 200px;
 	border-radius: 50%;
 	border: 4px solid #000;
-	background: url(spritesheet.png);
-	background-position: -0px -0px;
+	background: url(../images/face.jpg);
 	background-size: 100%;
 	margin: 120px 50px 0 50px;
 }
@@ -296,8 +292,7 @@ html {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background: url(spritesheet.png) no-repeat center center;
-	background-position: -813px -0px;
+	background: url(../images/down_icon.png) no-repeat center center;
 	background-size: 35px 35px;
 	transition: .5s all ease;
 }
@@ -329,26 +324,22 @@ html {
 }
 
 .about_me .my-info .info-list .info-details .details-box .contacts li i.detail-qq {
-	background: url(spritesheet.png);
-	background-position: -0px -400px;
+	background: url(../images/detail-qq.png);
 	background-size: cover;
 }
 
 .about_me .my-info .info-list .info-details .details-box .contacts li i.detail-wechat {
-	background: url(spritesheet.png);
-	background-position: -200px -400px;
+	background: url(../images/detail-wechat.png);
 	background-size: cover;
 }
 
 .about_me .my-info .info-list .info-details .details-box .contacts li i.detail-email {
-	background: url(spritesheet.png);
-	background-position: -400px -400px;
+	background: url(../images/detail-email.png);
 	background-size: cover;
 }
 
 .about_me .my-info .info-list .info-details .details-box .contacts li i.detail-git {
-	background: url(spritesheet.png);
-	background-position: -613px -0px;
+	background: url(../images/detail-github.png);
 	background-size: cover;
 }
 
@@ -443,38 +434,32 @@ html {
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.html {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -400px -200px;
+	background: url(../images/html-icon.png) no-repeat center;
 	background-size: 30px 30px;
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.js {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -613px -400px;
+	background: url(../images/js.png) no-repeat center;
 	background-size: 30px 30px;
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.jquery {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -0px -600px;
+	background: url(../images/jquery.png) no-repeat center;
 	background-size: 30px 30px;
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.ajax {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -200px -600px;
+	background: url(../images/ajax.png) no-repeat center;
 	background-size: 50px 50px;
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.html5 {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -400px -600px;
+	background: url(../images/html5.png) no-repeat center;
 	background-size: 30px 30px;
 }
 
 .about_me .my-info .info-list .info-skills .skill_lis li.github {
-	background: url(spritesheet.png) no-repeat center;
-	background-position: -600px -600px;
+	background: url(../images/github.png) no-repeat center;
 	background-size: 30px 30px;
 }
 
@@ -515,7 +500,7 @@ html {
 
 .about_me .my-info .info-list .info-levels .skill_point .bar-list {
 	width: 1000px;
-	height: 320px;
+	height: 400px;
 	overflow: hidden;
 	position: relative;
 }
@@ -531,7 +516,7 @@ html {
 	width: 220px;
 	height: 280px;
 	background: #eee;
-	margin: 0 50px 40px 50px;
+	margin: 0 50px 60px 50px;
 	border-radius: 10px 10px 0 0;
 }
 
@@ -581,7 +566,7 @@ html {
 .my_works .list {
 	width: 1170px;
 	height: 240px;
-	margin: 0 auto;
+	margin: 6em auto;
 	position: relative;
 }
 
@@ -674,20 +659,19 @@ html {
 }
 
 .footer .contacts {
-	margin: 50px auto 0;
+	margin: 4em auto 0;
 	position: relative;
-	width: 80%;
+	width: 100%;
 	height: 500px;
 }
 
 .footer .contacts span {
 	display: block;
 	padding-left: 100px;
-	margin-left: 175px;
-	width: 300px;
+	width: 700px;
 	height: 60px;
 	background-size: 60px 60px;
-	margin-bottom: 60px;
+	margin: 0 auto 60px;
 }
 
 .footer .contacts a {
@@ -713,16 +697,13 @@ html {
 }
 
 .footer .email {
-	background: url(spritesheet.png) no-repeat;
-	background-position: -400px -0px;
+	background: url(../images/email.png) no-repeat;
 }
 
 .footer .qq {
-	background: url(spritesheet.png) no-repeat;
-	background-position: -0px -400px;
+	background: url(../images/detail-qq.png) no-repeat;
 }
 
 .footer .web-site {
-	background: url(spritesheet.png) no-repeat;
-	background-position: -613px -200px;
+	background: url(../images/web.png) no-repeat;
 }

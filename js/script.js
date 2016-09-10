@@ -5,7 +5,7 @@ domReady(function(){
 		var winW = document.documentElement.clientWidth;
 		var winH = document.documentElement.clientHeight;
 
-		window.onload = function(){
+		window.onload = window.onresize = function(){
 			for(var i=0; i<aPage.length; i++){
 				aPage[i].style.width = winW + 'px';
 				aPage[i].style.height = winH + 'px';
@@ -143,35 +143,37 @@ domReady(function(){
 		var aLi = oList.children;
 		var iNow = 1;
 		var bReady = true;
+		var winW = document.documentElement.clientWidth;
 
-		oList.style.width = aLi[0].offsetWidth * aLi.length + 'px';
-		oList.style.left = -iNow * aLi[0].offsetWidth + 'px';
+		oList.style.width = winW * aLi.length + 'px';
+		console.log(getStyle(aLi[0],'width'));
+		oList.style.left = -iNow * winW + 'px';
 
 		// 向右轮播
 		oNext.onclick = function(){
 			if(!bReady)return;
 			bReady = false;
 			iNow++;
-			oList.style.left = -iNow * aLi[0].offsetWidth + 'px';
+			oList.style.left = -iNow * winW + 'px';
 			oList.style.transition = '1s all ease';
 		}
 		oPrev.onclick = function(){
 			if(!bReady)return;
 			bReady = false;
 			iNow--;
-			oList.style.left = -iNow * aLi[0].offsetWidth + 'px';
+			oList.style.left = -iNow * winW + 'px';
 			oList.style.transition = '1s all ease';
 		}
 
 		oList.addEventListener('transitionend',function(){
 			if(iNow == aLi.length-1){
 				iNow = 1;
-				oList.style.left = -iNow * aLi[0].offsetWidth + 'px';
+				oList.style.left = -iNow * winW + 'px';
 				oList.style.transition = 'none';
 			}
 			if(iNow == 0){
 				iNow = aLi.length-2;
-				oList.style.left = -iNow * aLi[0].offsetWidth + 'px';
+				oList.style.left = -iNow * winW + 'px';
 				oList.style.transition = 'none';
 			}
 			bReady = true;

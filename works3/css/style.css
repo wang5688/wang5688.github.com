@@ -291,6 +291,7 @@
 	width: 770px; 
 	height: 600px; 
 	background: url(../img/iphone_bg.png) -2px 0 no-repeat;
+	margin: 0 auto;
 }
 .cont .work-list .work .work-5 #wrap { 
 	width: 238px; 
