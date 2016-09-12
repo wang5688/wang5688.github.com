@@ -277,10 +277,4 @@ domReady(function(){
 			}
 		}
 	})();
-
-	;(function(){
-		
-		
-		
-	})();
 });

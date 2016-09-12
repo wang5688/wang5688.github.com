@@ -138,11 +138,7 @@ html {
 
 .content .tit {
 	margin: 0 auto;
-<<<<<<< HEAD
 	padding-top: 0.5em;
-=======
-	padding-top: 1em;
->>>>>>> cbd1dd045bcf7dedfcc3fc6722d706f38b448217
 	text-align: center;
 	color: #fff;
 	font-size: 50px;
@@ -221,11 +217,7 @@ html {
 	position: relative;
 	width: 880px;
 	height: 460px;
-<<<<<<< HEAD
 	background: url(../images/bodybg.png);
-=======
-	background: #eee;
->>>>>>> cbd1dd045bcf7dedfcc3fc6722d706f38b448217
 	margin: 40px auto;
 	border: 3px solid #dcdcdc;
 	box-shadow: 0 0 6px #000;
