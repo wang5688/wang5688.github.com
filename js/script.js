@@ -54,6 +54,8 @@ domReady(function(){
 	    //时间控制
 	    var aniTime = 0;
 
+	    var oFace = document.getElementById('face');
+
 	    var scrollFunc = function (e) {
 	        //如果动画还没执行完，则return
 	        if(new Date().getTime() < aniTime + duration){
@@ -68,6 +70,9 @@ domReady(function(){
 	                movePrev();
 	            } else if (t < 0 && curIndex < sumCount - 1) {
 	                //下滚动
+			        if(curIndex > 2){
+			        	curIndex = 2;
+			        }
 	                moveNext();
 	            }
 	        } else if (e.detail) {//Firefox
@@ -93,7 +98,6 @@ domReady(function(){
 	    function movePrev(){
 	        //获取动画开始时的时间
 	        aniTime = new Date().getTime();
-
 	        oContent.style.transform = 'translate3D(0, -' + (--curIndex) * winH + 'px, 0)';
 	        active(curIndex);
 	    }
@@ -274,5 +278,9 @@ domReady(function(){
 		}
 	})();
 
-
+	;(function(){
+		
+		
+		
+	})();
 });

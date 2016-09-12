@@ -187,3 +187,15 @@ function d2a(n){
 function a2b(n){
 	return n*180*Math.PI;
 }
+
+// 距离顶部距离
+function getPos(obj) {
+	var l = 0;
+	var t = 0;
+	if(obj){
+		l+=obj.offsetLeft;
+		t+=obj.offsetTop;
+		obj = obj.offsetParent;
+	}
+	return {left:l, top:t};
+}
