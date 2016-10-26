@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vieport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    (function(win,doc){
+        function change(){
+            doc.documentElement.style.fontSize = doc.documentElement.clientWidth/16 + 'px';
+        }
+        win.addEventListener('resize',change,false);
+        change();
+    })(window,document);
+</script>
+<style>
+    *{ margin: 0; padding: 0; list-style: none; }
+    h1,h2,h3,h4,h5,h6{ font-size: 12px; padding: 0; margin: 0; font-weight: normal; }
+    a{ color: #000; text-decoration: none; }
+    input{ outline: none; }
+    i{ font-style: normal; }
+    .fl{ float: left; }
+    .fr{ float: right; }
+    .clearfix:after{ display: block; content: ''; clear: both; }
+    body{ background: #f0f0f0; font-family: '微软雅黑'; }
+
+    header{ width: 16rem; height: 2.15rem; background: #f0f0f0; border: 0.025rem solid #f0f0f0; box-sizing: border-box; }
+    header .logo{ width: 3.55rem; height: 1.15rem; background: url(img/dangdang_logo.png) no-repeat center center; background-size: 100%; text-indent: -9999rem; margin: 0.5rem 0 0 0.5rem; }
+    header .info{ margin: 0.5rem 0.825rem 0 0; }
+    header .info .menu{ width: 1rem; height: 1rem; background: url(img/icon_menu.png) no-repeat center center; background-size: 100%; margin-right: 0.875rem; margin-top: 0.2rem; }
+    header .info .shop-car{ width: 1.5rem; height: 1.15rem; background: url(img/icon_shopcar.png) no-repeat center center; background-size: 84%; margin-right: 0.5rem; }
+    header .info .signal-center{ width: 1.1rem; height: 1.15rem; background: url(img/icon_center.png) no-repeat center center; background-size: 100%; }
+    .banner{ width: 16rem; height: 6.275rem; position: relative; }
+    .banner .list{ width: auto; height: 100%; overflow: hidden; }
+    .banner .list li{ width: 16rem; height: 6.275rem; }
+    .banner .list li img{ width: 100%; height: 100%; }
+    .banner .list-btn{ position: absolute; bottom: 0.075rem; right: 0.25rem; background: rgba(0,0,0,0.6); padding: 0 0.15rem; border-radius: 0.2rem; }
+    .banner .list-btn li.active{ background: #ff463c; }
+    .banner .list-btn li{ width: 0.3rem; height: 0.3rem; background: #dbcccc; border-radius: 50%; margin: 0.075rem 0.125rem; }
+    .adv{ width: 15.2rem; height: 1.5rem; background: #fbb347; margin: 0.5rem auto; }
+    .adv p{ font-size: 0.75rem; color: #fff; text-align: center; line-height: 1.5rem; }
+    .search input{ width: 11.3rem; height: 1.9rem; border: 0.05rem solid #ed9533; color: #a7a7a7; font-size: 0.7rem; padding-left: 0.6rem; margin-left: 0.5rem; }
+    .search a{ width: 3rem; height: 2rem; background: #fe9600 url(img/dangdang/icon_search.png) no-repeat center center; background-size: 1.2rem 1.2rem; }
+    .content nav a{ font-size: 0.7rem; color: #7d7d7d; margin: 0 0.45rem; }
+    .content nav ul{ width: 11.5rem; height: auto; margin: 1.05rem auto 0.5rem; }
+    .content nav li{ line-height: 0.7rem; margin-bottom: 1.1rem; }
+    .content .func{ margin-left: 0.1rem; }
+    .content .func li .icon{ width: 2.9rem; height: 2.9rem; border: 0.05rem solid #c3c3c3; border-radius: 0.1rem; margin: 0 0.45rem; background: #fff url(img/dangdang/icons1.png) no-repeat center center; background-size: 1.6rem 1.6rem; }
+    .content .func li a{ display: block; text-align: center; font-size: 0.6rem; color: #6b6b6b; line-height: 0.6rem; margin-top: 0.6rem; }
+    .content .nowday .tit{ width: 16rem; height: 1.55rem; background: #fe9600 url(img/dangdang/icons2.png) 15.125rem center no-repeat; margin: 1.5rem 0 0.5rem; }
+    .content .nowday .tit h2{ font-size: 0.75rem; color: #fff; line-height: 1.55rem; margin-left: 0.5rem; }
+    .content .nowday .tit h2 i{ font-size: 0.6rem; margin-left: 0.55rem; }
+    .content .nowday .pics{ margin-left: 0.15rem; }
+    .content .nowday .pics li{ position: relative; width: 7.25rem; height: 7.25rem; margin: 0 0.25rem; }
+    .content .nowday .pics li img{ width: 100%; height: 100%; }
+    .content .nowday .pics li .mask{ position: absolute; left: 0; bottom: 0; width: 100%; height: 2rem; background: rgba(0,0,0,0.8); }
+    .content .nowday .pics li p{ font-size: 0.6rem; color: #fff; position: absolute; left: 0.375rem; bottom: 1.1rem;}
+    .content .nowday .pics li .price{ font-size: 0.6rem; color: #d7656f; position: absolute; left: 0.375rem; bottom: 0.2rem;}
+    .content .nowday .pics li .price i{ margin-left: 0.75rem; color: #d0b07f; }
+</style>
+</head>
+<body>
+    <section>
+        <header class="clearfix">
+            <h1 class="logo fl">logo</h1>
+            <div class="info fr">
+                <a href="javascript:;" class="menu fl"></a>
+                <span class="shop-car fl"></span>
+                <a href="javascript:;" class="signal-center fl"></a>
+            </div>
+        </header>
+    </section>
+
+    <section class="banner">
+        <ol class="list-btn clearfix">
+            <li class="fl active"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+        </ol>
+        <ul class="list clearfix">
+            <li class="fl"><img src="img/dangdang/10261-nsnf-700x270.jpg" alt=""></li>
+            <li class="fl"><img src="img/dangdang/700270_VIP1025.jpg" alt=""></li>
+            <li class="fl"><img src="img/dangdang/700X270vrtrrree.jpg" alt=""></li>
+            <li class="fl"><img src="img/dangdang/720x270_wzh_20161023.jpg" alt=""></li>
+            <li class="fl"><img src="img/dangdang/73440019496902_1_o.jpg" alt=""></li>
+            <li class="fl"><img src="img/dangdang/android5.8-10.26.jpg" alt=""></li>
+        </ul>
+    </section>
+
+    <section class="adv">
+        <p>下载当当手机客户端既得5元现金券</p>
+    </section>
+
+    <section class="search clearfix">
+        <input type="text" placeholder="唯品会" class="fl">
+        <a href="javascript:;" class="fl"></a>
+    </section>
+
+    <section class="content">
+        <nav>
+            <ul class="clearfix">
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+                <li class="fl"><a href="javascript:;">图书</a></li>
+            </ul>
+        </nav>
+
+        <div class="func">
+            <ul class="clearfix">
+                <li class="fl">
+                    <div class="icon"></div>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="fl">
+                    <div class="icon"></div>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="fl">
+                    <div class="icon"></div>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="fl">
+                    <div class="icon"></div>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nowday">
+            <div class="tit">
+                <h2>今日闪价<i>挑战全网最低价</i></h2>
+            </div>
+            <div class="pics">
+                <ul class="clearfix">
+                    <li class="fl">
+                        <img src="img/dangdang/201610241856-Androidaaaa.jpg" alt="">
+                        <span class="mask"></span>
+                        <p>欣怡幽香沐浴露</p>
+                        <span class="price">￥39.90 <i>7.1折</i></span>
+                    </li>
+                    <li class="fl">
+                        <img src="img/dangdang/201610241856-Androidaaaa.jpg" alt="">
+                        <span class="mask"></span>
+                        <p>欣怡幽香沐浴露</p>
+                        <span class="price">￥39.90 <i>7.1折</i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
