@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 <script>
@@ -31,11 +31,11 @@
     header .info .menu{ width: 1rem; height: 1rem; background: url(img/icon_menu.png) no-repeat center center; background-size: 100%; margin-right: 0.875rem; margin-top: 0.2rem; }
     header .info .shop-car{ width: 1.5rem; height: 1.15rem; background: url(img/icon_shopcar.png) no-repeat center center; background-size: 84%; margin-right: 0.5rem; }
     header .info .signal-center{ width: 1.1rem; height: 1.15rem; background: url(img/icon_center.png) no-repeat center center; background-size: 100%; }
-    .banner{ width: 16rem; height: 6.275rem; position: relative; }
-    .banner .list{ width: auto; height: 100%; overflow: hidden; }
+    .banner{ width: 16rem; height: 6.275rem; position: relative; overflow: hidden; }
+    .banner .list{ width: auto; height: 100%; }
     .banner .list li{ width: 16rem; height: 6.275rem; }
     .banner .list li img{ width: 100%; height: 100%; }
-    .banner .list-btn{ position: absolute; bottom: 0.075rem; right: 0.25rem; background: rgba(0,0,0,0.6); padding: 0 0.15rem; border-radius: 0.2rem; }
+    .banner .list-btn{ position: absolute; bottom: 0.075rem; right: 0.25rem; z-index: 999; background: rgba(0,0,0,0.6); padding: 0 0.15rem; border-radius: 0.2rem; }
     .banner .list-btn li.active{ background: #ff463c; }
     .banner .list-btn li{ width: 0.3rem; height: 0.3rem; background: #dbcccc; border-radius: 50%; margin: 0.075rem 0.125rem; }
     .adv{ width: 15.2rem; height: 1.5rem; background: #fbb347; margin: 0.5rem auto; }
@@ -74,6 +74,90 @@
     .content .weipin .list-blur li a{ font-size: 0.7rem; color: #6a6a6a; }
 
 </style>
+<script src="zepto.js"></script>
+<script>
+    $(function(){
+        var iNow = 0;
+        var width = $('.banner .list li').width();
+        var x = -iNow*width;
+
+        $('.banner .list').css({
+            width : $('.banner .list li').width()*$('.banner .list li').size(),
+            transform : 'translate3d('+x+'px,0px,0px)'
+        });
+
+        setInterval(function(){
+            iNow++;
+            if(iNow < 0){
+                iNow = $('.banner .list li').size()-1;
+            }
+            if(iNow > $('.banner .list li').size()-1){
+                iNow = 0;
+            }
+            $('.banner .list').css({
+                transition : '1s all ease',
+                transform : 'translate3d('+-iNow*width+'px,0px,0px)'
+            });
+            $('.banner .list-btn li').removeClass('active');
+            $('.banner .list-btn li').eq(iNow).addClass('active');
+        },4000);
+
+        $('.banner').on('touchstart',function(ev){
+            var oTouch = ev.targetTouches[0];
+            var start = oTouch.pageX;
+            var disX = oTouch.pageX - x;
+
+            $('.banner .list').css({
+                transition : 'none'
+            });
+
+            function fnMove(ev){
+                var oTouch = ev.targetTouches[0];
+                x = oTouch.pageX - disX;
+                $('.banner .list').css({
+                    transform : 'translate3d('+x+'px,0px,0px)'
+                });
+            }
+            function fnEnd(ev){
+                var oTouch = ev.changedTouches[0];
+                var end = oTouch.pageX;
+
+                if(Math.abs(end-start) > 50){
+                    if(end - start > 0){
+                        iNow--;
+                    }else if(end - start < 0){
+                        iNow++;
+                    }
+                    if(iNow < 0){
+                        iNow = 0;
+                    }
+                    if(iNow > $('.banner .list li').size()-1){
+                        iNow = $('.banner .list li').size()-1;
+                    }
+                    x = -iNow*width;
+                    $('.banner .list').css({
+                        transition : '1s all ease',
+                        transform : 'translate3d('+x+'px,0px,0px)'
+                    });
+                    $('.banner .list-btn li').removeClass('active');
+                    $('.banner .list-btn li').eq(iNow).addClass('active');
+                }else{
+                    x = -iNow*width;
+                    $('.banner .list').css({
+                        transition : '1s all ease',
+                        transform : 'translate3d('+x+'px,0px,0px)'
+                    });
+                }
+                $(document).unbind('touchmove',fnMove);
+                $(document).unbind('touchend',fnEnd);
+            }
+
+            $(document).bind('touchmove',fnMove);
+            $(document).bind('touchend',fnEnd);
+        });
+
+    });
+</script>
 </head>
 <body>
     <section>
