@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    var imageURL = 'http://p7.qhimg.com/t01f099c76b5443b73d.jpg';
+    var lineLink = 'http://www.baidu.com';
+    var descContent = '你猜我是谁啊，快快分享啊，哈哈哈哈哈哈';
+    var shareTitle = '分享测试';
+    var appid = '';
+
+    // function shareFriend(){
+    //     WeixinJSBridge.invoke('sendAppMessage',{
+    //         "appid" : appid,
+    //         "img_url" : imageURL,
+    //         "img_width" : '200',
+    //         "img_height" : '200',
+    //         "link" : lineLink,
+    //         "desc" : descContent,
+    //         "title" : shareTitle
+    //     },function(res){
+    //
+    //     })
+    // }
+
+    // 微信内置浏览器初始化后触发事件
+    document.addEventListener('WeixinJSBridgeReady',function onBridgeReady(){
+        document.write('加载完成了');
+    });
+</script>
+</head>
+<body>
+
+</body>
+</html>
