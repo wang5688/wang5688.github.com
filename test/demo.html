@@ -3,78 +3,153 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, userscalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>Document</title>
-    <style>
-        *{ margin: 0; padding: 0; list-style: none; font-size: 20px;}
-        body{ overflow: hidden; }
-        .content{ width: 100%; height: 500px; _overflow: hidden; }
-        #wrapper{ width: 100%; height: 300px; overflow: hidden;}
-    </style>
-<script src="./iscroll.js"></script>
-<script src="./jquery-1.7.2.js"></script>
+<link rel="stylesheet" href="./demo.css">
+<script src="./zepto.js"></script>
+<script src="./xscroll.js"></script>
+<script src="./xscroll-pulldown.js"></script>
 </head>
-<body>
-    <div class="content">
-    <div id="wrapper">
-        <ul>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-            <li>防腐剂埃里克发顺丰举案说法</li>
-        </ul>
-    </div>
-</div>
-<script type="text/javascript">
-    var myScroll = new IScroll('#wrapper',{
-		probeType:3, mouseWheel: false, bounce:false
-	});
+<style type="text/css">
+#J_Scroll li{
+padding: 0 10px;
+height: 40px;
+line-height: 40px;
+border-bottom: 1px solid #ccc;
+border-top: 1px solid #fff;
+font-size: 16px;
+display: block;
+list-style: none;
+}
 
-	myScroll.on('scroll', function(){
-		console.log(this.y);
-		if(this.y == -574){
-			alert(1);
-			var oCont = $('<li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li>');
-			oCont.appendTo($('#wrapper ul'));
-			myScroll.refresh();
-		}
-	});
-</script>
+img{
+	display: block;
+}
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#J_Scroll ul{
+	width: 100%;
+}
+#J_Scroll ul li{
+	width: 100%;
+}
+.xs-container{
+	width: 100%;
+}
+</style>
+<body>
+	<div id="header">XScroll</div>
+	<div id="J_Scroll">
+		<div class="xs-container">
+			<ul class="xs-content">
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+				<li>row</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">scroll-y</div>
+	<script type="text/javascript">
+		var myScroll = new XScroll({
+			renderTo : '#J_Scroll',
+			scrollbarX : false,
+			lockX : true,
+			lockY : false
+		});
+
+		var pullDown = new XScroll.Plugins.PullDown({
+			autoRefresh : false
+		});
+
+		myScroll.plug(pullDown);
+
+		pullDown.on('loading', function(e){
+			console.log('success');
+			pullDown.reset(function(){
+				myScroll.render();
+			});
+		});
+
+		myScroll.render();
+	</script>
 </body>
 </html>
