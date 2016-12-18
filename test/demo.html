@@ -69,6 +69,7 @@
 	myScroll.on('scrollEnd', function(){
 		console.log(this.y);
 		if(this.y == -574){
+			alert(1);
 			var oCont = $('<li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li>');
 			oCont.appendTo($('#wrapper ul'));
 			myScroll.refresh();
