@@ -14,6 +14,7 @@
         #wrapper{ width: 100%; height: 300px; overflow: hidden;}
     </style>
 <script src="./iscroll.js"></script>
+<script src="./jquery-1.7.2.js"></script>
 </head>
 <body>
     <div class="content">
@@ -61,7 +62,18 @@
     </div>
 </div>
 <script type="text/javascript">
-    var myScroll = new IScroll('#wrapper');
+    var myScroll = new IScroll('#wrapper',{
+		probeType:3, mouseWheel: false, bounce:false
+	});
+
+	myScroll.on('scrollEnd', function(){
+		console.log(this.y);
+		if(this.y == -574){
+			var oCont = $('<li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li><li>我是添加的内容</li>');
+			oCont.appendTo($('#wrapper ul'));
+			myScroll.refresh();
+		}
+	});
 </script>
 </body>
 </html>
