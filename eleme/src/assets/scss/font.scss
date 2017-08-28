@@ -1,0 +1,41 @@
+@import "var";
+
+.color-1 {
+    color: #fff;
+}
+.color-2 {
+    color: #07111b;
+}
+.color-3 {
+    color: #4d555d;
+}
+
+.font-bold {
+    font-weight: 700!important;
+}
+
+.font1 {
+    font-size: px2rem(28px);
+    line-height: px2rem(28px);
+}
+.font2 {
+    font-size: px2rem(24px);
+    line-height: px2rem(24px);
+}
+.font3 {
+    font-size: px2rem(20px);
+    line-height: px2rem(20px);
+}
+.font4 {
+    font-size: px2rem(18px);
+    line-height: px2rem(18px);
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 324109 */
+  src: url('//at.alicdn.com/t/font_fid4p91ivfeqm2t9.eot');
+  src: url('//at.alicdn.com/t/font_fid4p91ivfeqm2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_fid4p91ivfeqm2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_fid4p91ivfeqm2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_fid4p91ivfeqm2t9.svg#iconfont') format('svg');
+}

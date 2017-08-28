@@ -1,0 +1,16 @@
+@import "font";
+
+@function p2m($px, $base-font-size: 46.875px) {
+    @return $px / $base-font-size * 1rem;
+}
+
+@mixin bg-image($url) {
+    background-image: url($url);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@mixin font-w($num) {
+    font-weight: $num!important;
+}

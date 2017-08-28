@@ -1,0 +1,631 @@
+{
+	"status": 1,
+	"errcode": 0,
+	"error": "",
+	"data": {
+		"timestamp": 1497513138,
+		"total": 27,
+		"info": [{
+			"id": 1,
+			"rankid": 6666,
+			"rankname": "酷狗飙升榜",
+			"ranktype": 2,
+			"intro": "数据来源：酷狗\r\n排序方式：按歌曲搜索播放量的涨幅排序\r\n更新周期：每天",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100030907982.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161102692497.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161100773965.png",
+			"isvol": 1,
+			"update_frequency": "每天",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "周柏豪 - 上下线"
+			}, {
+				"songname": "汪苏泷 - 未来告白【寻人大师主题曲】"
+			}, {
+				"songname": "林采欣 - 云中书【上古情歌插曲】"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 2,
+			"rankid": 8888,
+			"rankname": "酷狗TOP500",
+			"ranktype": 2,
+			"intro": "数据来源：酷狗\r\n排序方式：按歌曲搜索播放一周总量排序\r\n更新周期：周四",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100046499341.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161200306618.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161158855874.png",
+			"isvol": 1,
+			"update_frequency": "周四",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "杨宗纬、张碧晨 - 凉凉"
+			}, {
+				"songname": "赵雷 - 成都"
+			}, {
+				"songname": "李玉刚 - 刚好遇见你"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 127,
+			"rankid": 29951,
+			"rankname": "酷狗单曲畅销榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗付费歌曲购买量\r\n排序方式：按歌曲被购买次数排序\r\n更新周期：每天",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160824\/20160824150135940461.jpg",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160824\/20160824150139358094.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160826\/20160826113608660358.png",
+			"isvol": 0,
+			"update_frequency": "每天更新",
+			"custom_type": 3,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "杨宗纬、张碧晨 - 凉凉"
+			}, {
+				"songname": "赵雷 - 成都"
+			}, {
+				"songname": "郁可唯、王铮亮 - 星月"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 65,
+			"rankid": 23784,
+			"rankname": "网络红歌榜",
+			"ranktype": 1,
+			"intro": "数据来源：酷狗网络类歌曲\r\n排序方式：按歌曲搜索播放一周总量排序\r\n更新周期：周一",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150818\/20150818104300762763.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150818\/20150818104303844759.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150818\/20150818104301582059.png",
+			"isvol": 1,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "金南玲 - 逆流成河"
+			}, {
+				"songname": "神马乐团 - 爱河"
+			}, {
+				"songname": "唐古 - 你是我哭着唱的歌"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 109,
+			"rankid": 24971,
+			"rankname": "DJ热歌榜",
+			"ranktype": 1,
+			"intro": "数据来源：酷狗DJ类歌曲\r\n排序方式：按歌曲搜索播放一周总量排序\r\n更新周期：周二",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160119\/20160119114653428408.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160119\/20160119114657498573.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160119\/20160119114655861933.png",
+			"isvol": 0,
+			"update_frequency": "周二",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "艺涛、梁剑东 - 夜色 - DJ版"
+			}, {
+				"songname": "萧全 - 社会摇 - DJ版"
+			}, {
+				"songname": "李玉刚 - 刚好遇见你 - DJ版"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 35,
+			"rankid": 27,
+			"rankname": "华语新歌榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗三个月内发行的华语新歌\r\n排序方式：按播放量、话题热度等维度综合排序\r\n更新周期：每周更新",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100103282211.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161259106875.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161258394283.png",
+			"isvol": 0,
+			"update_frequency": "每周更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "G.E.M.邓紫棋 - 桃花诺"
+			}, {
+				"songname": "华晨宇 - 齐天"
+			}, {
+				"songname": "郁可唯、王铮亮 - 星月"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 36,
+			"rankid": 28,
+			"rankname": "欧美新歌榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗半年内发行的欧美新歌\r\n排序方式：按播放量、话题热度等维度综合排序\r\n更新周期：每周更新",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100117648320.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161331331346.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161330279063.png",
+			"isvol": 0,
+			"update_frequency": "每周更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "David Guetta、Justin Bieber - 2U"
+			}, {
+				"songname": "Pharrell Williams - Yellow Light【神偷奶爸3主题曲】"
+			}, {
+				"songname": "Miley Cyrus - Inspired"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 67,
+			"rankid": 24045,
+			"rankname": "韩国新歌榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗半年内发行的韩国新歌\r\n排序方式：按播放量、话题热度等维度排序",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170207\/20170207104015555457.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20170207\/20170207104018533257.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170207\/20170207104016820803.png",
+			"isvol": 0,
+			"update_frequency": "每周更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "T-ara - 我的名字叫 (What's my name?) (내 이름은)"
+			}, {
+				"songname": "脸红的思春期、二十岁 - We Loved (남이 될 수 있을까)"
+			}, {
+				"songname": "PENTAGON - 珍贵的约定 (To Universe) (소중한 약속)"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 69,
+			"rankid": 24047,
+			"rankname": "日本新歌榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗半年内发行的日语新歌\r\n排序方式：按播放量、话题热度等维度综合排名\r\n更新周期：每周更新",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105175335175464.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20151105\/20151105175339377312.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105175337978935.png",
+			"isvol": 0,
+			"update_frequency": "每周更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Da-iCE - トニカクHEY (Japanese ver.)"
+			}, {
+				"songname": "THE ORAL CIGARETTES - トナリアウ【重启咲良田 ED】"
+			}, {
+				"songname": "KANA-BOON - バトンロード【博人传：火影忍者新时代 OP】"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 39,
+			"rankid": 22050,
+			"rankname": "粤语新歌榜",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗半年内发行的粤语新歌\r\n排序方式：按播放量、话题热度等维度综合排序\r\n更新周期：每周更新",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100200275675.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161440745006.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161439781918.png",
+			"isvol": 0,
+			"update_frequency": "每周更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "李克勤 - 失魂记"
+			}, {
+				"songname": "林二汶 - 有你一个"
+			}, {
+				"songname": "许廷铿、王嘉仪 - 根"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 30,
+			"rankid": 21101,
+			"rankname": "vivo热歌分享榜",
+			"ranktype": 1,
+			"intro": "数据来源：酷狗\r\n排序方式：根据酷狗用户的分享、转发、下载量综合排序\r\n更新周期：周二",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170418\/20170418142021927674.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20170418\/20170418142024735807.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170418\/20170418142023207298.jpg",
+			"isvol": 1,
+			"update_frequency": "周二",
+			"custom_type": 0,
+			"jump_title": "vivo新品首发",
+			"jump_url": "http:\/\/sale.suning.com\/tx\/vivox7yd\/index.html?utm_source=pl-00006&utm_medium=vivokugou&utm_campaign=pphd",
+			"songinfo": [{
+				"songname": "梦然 - 没有你陪伴真的好孤单"
+			}, {
+				"songname": "李玉刚 - 刚好遇见你"
+			}, {
+				"songname": "王冕 - 勉为其难"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 133,
+			"rankid": 28653,
+			"rankname": "原创音乐榜",
+			"ranktype": 0,
+			"intro": "数据来源：5sing原创歌曲\r\n排序方式：按播放量、话题热度等维度排序",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20161013\/20161013110348466009.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20161013\/20161013111529536708.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20161013\/20161013110350572046.png",
+			"isvol": 0,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "李玉刚 - 刚好遇见你"
+			}, {
+				"songname": "赵雷 - 成都 (Live)"
+			}, {
+				"songname": "董贞 - 繁花【三生三世十里桃花插曲】"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 157,
+			"rankid": 30210,
+			"rankname": "金曲捞榜",
+			"ranktype": 0,
+			"intro": "数据来源：《金曲捞》节目歌曲\r\n排序方式：按节目歌曲搜索播放量来排序。",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170420\/20170420170933676386.jpg",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20170420\/20170420155957846157.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20170420\/20170420233323654906.jpg",
+			"isvol": 0,
+			"update_frequency": "周五",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "黄国伦 - 我不睡  (Live)"
+			}, {
+				"songname": "A-Lin - 空窗  (Live)"
+			}, {
+				"songname": "辛晓琪、A-Lin - 空窗 (Live)"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 42,
+			"rankid": 22603,
+			"rankname": "5sing音乐榜",
+			"ranktype": 1,
+			"intro": "数据来源：5sing\r\n排序方式：根据歌曲每周在5sing上获得总支持卡数来排序\r\n更新周期：周一",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100404157966.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161902899654.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161900198477.png",
+			"isvol": 1,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "伯虎 - 荀香清远"
+			}, {
+				"songname": "了悟 - 荣耀"
+			}, {
+				"songname": "Vk - 烟雨行舟"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 119,
+			"rankid": 28061,
+			"rankname": "校园歌曲榜",
+			"ranktype": 0,
+			"intro": "数据来源：校园及青春影视类歌曲\r\n排序方式：综合新旧程度和热门程度排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160531\/20160531175617521660.jpg",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160602\/20160602100444487940.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160531\/20160531175618297735.jpg",
+			"isvol": 0,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "胡夏 - 夏至未至"
+			}, {
+				"songname": "汪苏泷、By2 - 有点甜"
+			}, {
+				"songname": "Beyond - 光辉岁月"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 32,
+			"rankid": 21335,
+			"rankname": "繁星音乐榜",
+			"ranktype": 1,
+			"intro": "数据来源：繁星\r\n排序方式：按繁星网友投票数排序\r\n更新周期：每月更新",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100418606039.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150331\/20150331161933888483.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150331\/20150331161931512370.png",
+			"isvol": 1,
+			"update_frequency": "每月更新",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "金南玲 - 逆流成河"
+			}, {
+				"songname": "唐古 - 你的过去我不介意"
+			}, {
+				"songname": "陈雅森 - 温柔乡"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 10,
+			"rankid": 4681,
+			"rankname": "美国BillBoard榜",
+			"ranktype": 1,
+			"intro": "数据来源：美国Billboard\r\n排序方式：根据歌曲在美国的销量、电台播放量、流媒体下载量等指标进行排序\r\n更新周期：周五",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100525388020.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20140905\/20140905105835603586.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20140905\/20140905105445578636.png",
+			"isvol": 1,
+			"update_frequency": "周五",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Luis Fonsi、Daddy Yankee、Justin Bieber - Despacito (Remix)"
+			}, {
+				"songname": "Bruno Mars - That's What I Like"
+			}, {
+				"songname": "DJ Khaled、Justin Bieber、Quavo、Chance The Rapper、Lil Wayne - I'm the One"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 12,
+			"rankid": 4680,
+			"rankname": "英国单曲榜",
+			"ranktype": 1,
+			"intro": "数据来源：英国Single Chart\r\n排序方式：根据歌曲在英国的一周销量进行排序\r\n更新周期：周一",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100550553023.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20140905\/20140905105835861963.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20140905\/20140905105446188861.png",
+			"isvol": 1,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Luis Fonsi、Daddy Yankee、Justin Bieber - Despacito (Remix)"
+			}, {
+				"songname": "Ariana Grande - One Last Time"
+			}, {
+				"songname": "DJ Khaled、Justin Bieber、Quavo、Chance The Rapper、Lil Wayne - I'm the One"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 8,
+			"rankid": 4673,
+			"rankname": "日本公信榜",
+			"ranktype": 1,
+			"intro": "数据来源：日本Oricon\r\n排序方式：根据日本实体CD销量进行排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100648566701.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20140905\/20140905105716562182.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20140905\/20140905105033203397.png",
+			"isvol": 1,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Kis-My-Ft2 - PICK IT UP"
+			}, {
+				"songname": "AKB48 - 願いごとの持ち腐れ"
+			}, {
+				"songname": "金贤重 - 風車 <re:wind>"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 9,
+			"rankid": 4672,
+			"rankname": "韩国M-net音乐榜",
+			"ranktype": 1,
+			"intro": "数据来源：韩国M-net\r\n排序方式：根据M-net的销售、下载、播放等指标进行排序\r\n更新周期：周一",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100534135743.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20140905\/20140905105835941031.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20140905\/20140905105033699839.png",
+			"isvol": 1,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "TWICE - SIGNAL"
+			}, {
+				"songname": "国民之子 - NEVER"
+			}, {
+				"songname": "G-DRAGON - 무제(無題) (Untitled, 2014)"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 40,
+			"rankid": 22163,
+			"rankname": "中国TOP排行榜",
+			"ranktype": 1,
+			"intro": "数据来源：音乐之声\r\n排序方式：由音乐之声主持人及编辑进行专业打分，综合短信、销量、微博投票的结果进行排序\r\n更新周期：周一",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150717\/20150717100454577357.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20150104\/20150104141219778471.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20150104\/20150104141744528871.png",
+			"isvol": 1,
+			"update_frequency": "周一",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "信 - 越清醒越孤独【港台】 "
+			}, {
+				"songname": "李荣浩 - 嗯【内地】"
+			}, {
+				"songname": "黄淑惠 - 嘿【港台】"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 71,
+			"rankid": 70,
+			"rankname": "中文DJ",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗中文DJ、混音、舞曲等歌曲\r\n排序方式：按搜索播放一周总量排序\r\n更新周期：周二",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151102\/20151102152359118990.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20151102\/20151102152403367696.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151102\/20151102152401664391.png",
+			"isvol": 0,
+			"update_frequency": "周二",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "葛林 - 林中鸟 - DJ版"
+			}, {
+				"songname": "李晓杰 - 把酒倒满 - DJ版"
+			}, {
+				"songname": "金南玲 - 逆流成河 - DJ版"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 73,
+			"rankid": 24306,
+			"rankname": "全球百大DJ",
+			"ranktype": 0,
+			"intro": "数据来源：世界top100 DJ歌手榜\r\n排序方式：综合新旧程度和热门程度排序\r\n更新周期：周二",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160129\/20160129102832611181.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160129\/20160129102836912818.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160129\/20160129102834552860.png",
+			"isvol": 0,
+			"update_frequency": "周二",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Alan Walker - Alone"
+			}, {
+				"songname": "The Chainsmokers、Halsey - Closer"
+			}, {
+				"songname": "The Chainsmokers、Coldplay - Something Just Like This"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 81,
+			"rankid": 88,
+			"rankname": "车载音乐",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗\r\n排序方式：根据用户驾驶听歌习惯、播放和热度排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160711\/20160711153735417140.jpg",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160711\/20160711154145495798.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160711\/20160711153735586474.jpg",
+			"isvol": 0,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "Noah Cyrus - I'm Stuck"
+			}, {
+				"songname": "Halsey、Lauren Jauregui - Strangers"
+			}, {
+				"songname": "Carly Rae Jepsen - Cut To The Feeling"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 79,
+			"rankid": 24307,
+			"rankname": "KTV",
+			"ranktype": 0,
+			"intro": "数据来源：传唱度较高的歌曲\r\n排序方式：按搜索播放一周总量排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105172333633386.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20151105\/20151105172336950507.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105172334624074.png",
+			"isvol": 0,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "王冕 - 勉为其难"
+			}, {
+				"songname": "李玉刚 - 刚好遇见你"
+			}, {
+				"songname": "薛之谦 - 演员"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 77,
+			"rankid": 22096,
+			"rankname": "影视金曲",
+			"ranktype": 0,
+			"intro": "数据来源：三个月内的影视歌曲\r\n排序方式：按搜索播放一周总量排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105172246425804.png",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20151105\/20151105172251985332.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20151105\/20151105172249221738.png",
+			"isvol": 0,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "张杰、X Ambassadors - Torches【变形金刚5】"
+			}, {
+				"songname": "华晨宇 - 齐天【悟空传】"
+			}, {
+				"songname": "郁可唯、王铮亮 - 星月【楚乔传】"
+			}],
+			"haschildren": 0,
+			"children": []
+		}, {
+			"id": 123,
+			"rankid": 24574,
+			"rankname": "洗脑神曲",
+			"ranktype": 0,
+			"intro": "数据来源：酷狗神曲及搞怪类歌曲\r\n排序方式：按搜索播放一周总量排序\r\n更新周期：周三",
+			"imgurl": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160713\/20160713115034579027.jpg",
+			"bannerurl": "http:\/\/imge.kugou.com\/mcommonbanner\/{size}\/20160713\/20160713115036492119.jpg",
+			"banner7url": "http:\/\/imge.kugou.com\/mcommon\/{size}\/20160713\/20160713115035225905.jpg",
+			"isvol": 0,
+			"update_frequency": "周三",
+			"custom_type": 0,
+			"jump_title": "",
+			"jump_url": "",
+			"songinfo": [{
+				"songname": "苏勒亚其其格 - 勒勒车上唱情歌"
+			}, {
+				"songname": "杨小曼 - 他弟弟打的洞"
+			}, {
+				"songname": "筷子兄弟 - 小苹果"
+			}],
+			"haschildren": 0,
+			"children": []
+		}]
+	}
+}

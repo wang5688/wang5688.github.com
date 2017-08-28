@@ -1,0 +1,16 @@
+$color_1: #00a7fd;
+$color_2: #000;
+$color_3: #fff;
+
+@font-face {
+  font-family: 'icon-kg';  /* project id 327265 */
+  src: url('//at.alicdn.com/t/font_05qiif9fibgwrk9.eot');
+  src: url('//at.alicdn.com/t/font_05qiif9fibgwrk9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_05qiif9fibgwrk9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_05qiif9fibgwrk9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_05qiif9fibgwrk9.svg#icon-kg') format('svg');
+}
+
+.iconfont {
+    font-family: 'icon-kg'!important;
+}
